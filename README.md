@@ -7,7 +7,7 @@ to transfer the knowledge learned from the source domain to the target domain by
 
 Please Cite:
 
-@ARTICLE{9334409,
+@article{9334409,
 &nbsp;&nbsp;author={Zhang, Weichen and Xu, Dong and Zhang, Jing and Ouyang, Wanli},
 &nbsp;&nbsp;journal={IEEE Transactions on Image Processing}, 
 &nbsp;&nbsp;title={Progressive Modality Cooperation for Multi-Modality Domain Adaptation}, 
@@ -15,4 +15,5 @@ Please Cite:
 &nbsp;&nbsp;volume={30},
 &nbsp;&nbsp;number={},
 &nbsp;&nbsp;pages={3293-3306},
-&nbsp;&nbsp;doi={10.1109/TIP.2021.3052083}}
+&nbsp;&nbsp;doi={10.1109/TIP.2021.3052083}
+}
