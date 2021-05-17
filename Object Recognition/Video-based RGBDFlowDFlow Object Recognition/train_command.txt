@@ -1,0 +1,89 @@
+
+
+ ################# DANN FLOW #######################
+
+
+0.1 U2H
+nohup python main_spcan.py ucf101-10 Flow datalist/ucf101_flow_test_split_1.txt datalist/hmdb51_flow_test_split_1.txt --arch BNInception --num_segments 3 --gd 20 --lr 0.001 --lr_steps 180 230 --epochs 250 -b 72 -j 8 --dropout 0.7 --snapshot_pref ucf101_to_hmdb51_bninception_flow1_DANN_0.1 --flow_pref flow_ --dom_weight 0.1 > u2h1_flow1_DANN_0.1.txt &
+
+0.1 H2U
+nohup python main_spcan.py ucf101-10 Flow datalist/hmdb51_flow_test_split_1.txt datalist/ucf101_flow_test_split_1.txt --arch BNInception --num_segments 3 --gd 20 --lr 0.001 --lr_steps 180 230 --epochs 250 -b 72 -j 8 --dropout 0.7 --snapshot_pref hmdb51_to_ucf101_bninception_flow1_DANN_0.1 --flow_pref flow_ --dom_weight 0.1 > h2u1_flow1_DANN_0.1.txt &
+
+nohup python main_spcan.py ucf101-10 Flow datalist/hmdb51_flow_test_split_1.txt datalist/ucf101_flow_test_split_1.txt --arch BNInception --num_segments 3 --gd 20 --lr 0.001 --lr_steps 180 230 --epochs 250 -b 72 -j 8 --dropout 0.7 --snapshot_pref hmdb51_to_ucf101_bninception_flow1_DANN_0.3 --flow_pref flow_ --dom_weight 0.3 > h2u1_flow1_DANN_0.3.txt &
+
+
+ ################# DANN RGB #######################
+
+0.1 U2H
+nohup python main_spcan.py hmdb51-10 RGB datalist/ucf101_rgb_test_split_1.txt datalist/hmdb51_rgb_test_split_1.txt --arch BNInception --num_segments 3 --gd 20 --lr 0.001 --lr_steps 100 150 --epochs 180 -b 12 -j 8 --dropout 0.8 --snapshot_pref ucf101_to_hmdb51_bninception_rgb1_CAN > u2h1_rgb1_CAN_drop.txt & 
+
+0.1 H2U
+nohup python main_spcan.py ucf101-10 RGB datalist/hmdb51_rgb_test_split_1.txt datalist/ucf101_rgb_train_split_1.txt --arch BNInception --num_segments 3 --gd 20 --lr 0.001 --lr_steps 100 150 --epochs 180 -b 72 -j 8 --dropout 0.8 --snapshot_pref hmdb51_to_ucf101_bninception_rgb1_0.1 --dom_weight 0.1 > h2u1_rgb1_0.1.txt & 
+
+
+1231231asdfasdfas
+
+nohup python main_spcan.py hmdb51-10 RGB datalist/ucf101_rgb_test_split_1.txt datalist/hmdb51_rgb_train_split_1.txt --arch BNInception --num_segments 3 --gd 20 --lr 0.001 --lr_steps 100 150 --epochs 180 -b 72 -j 8 --dropout 0.8 --snapshot_pref ucf101_to_hmdb51_bninception_rgb1_finetune --dom_weight 0  > u2h1_rgb1_finetune.txt & 
+
+ ################# CAN RGB #######################
+
+nohup python main_spcan.py hmdb51-10 RGB datalist/ucf101_rgb_test_split_1.txt datalist/hmdb51_rgb_test_split_1.txt --arch BNInception --num_segments 3  --lr 0.001 --lr_steps 100 150 --epochs 180 -b 56 -j 8 --dropout 0.8 --gd 20 --snapshot_pref ucf101_to_hmdb51_bninception_rgb1_CAN0102_10w --form_w 0.1 --main_w -0.2 --gpu 0 --wt 1 > u2h1_rgb1_CAN_0102_10w.txt &
+
+
+
+
+0.1 U2H
+
+nohup python main_spcan.py hmdb51-10 RGB datalist/ucf101_rgb_test_split_1.txt datalist/hmdb51_rgb_test_split_1.txt --arch BNInception --num_segments 3  --lr 0.001 --lr_steps 100 150 --epochs 180 -b 56 -j 8 --dropout 0.8 --gd 20 --snapshot_pref ucf101_to_hmdb51_bninception_rgb1_CAN0203_10w --form_w 0.2 --main_w -0.3 --gpu 0 --wt 1 > u2h1_rgb1_CAN_0203_10w.txt &
+
+nohup python main_spcan.py hmdb51-10 RGB datalist/ucf101_rgb_test_split_1.txt datalist/hmdb51_rgb_test_split_1.txt --arch BNInception --num_segments 3  --lr 0.001 --lr_steps 100 150 --epochs 180 -b 56 -j 8 --dropout 0.8 --gd 20 --snapshot_pref ucf101_to_hmdb51_bninception_rgb1_CAN0102_10w --form_w 0.1 --main_w -0.2 --gpu 1 --wt 1 > u2h1_rgb1_CAN_0102_10w.txt &
+
+
+
+
+nohup python main_spcan.py ucf101-10 RGB datalist/hmdb51_rgb_test_split_1.txt datalist/ucf101_rgb_train_split_1.txt --arch BNInception --num_segments 3  --lr 0.001 --lr_steps 100 150 --epochs 180 -b 56 -j 8 --dropout 0.8 --gd 20 --snapshot_pref hmdb51_to_ucf101_bninception_rgb1_CAN0102_10w_0.2wt --form_w 0.2 --main_w -0.3 --gpu 1 --wt 0.2 > h2u1_rgb1_CAN_0203_10w_0.2wt.txt &
+
+
+nohup python main_spcan.py ucf101-10 RGB datalist/hmdb51_rgb_test_split_1.txt datalist/ucf101_rgb_train_split_1.txt --arch BNInception --num_segments 3  --lr 0.001 --lr_steps 100 150 --epochs 180 -b 56 -j 8 --dropout 0.8 --gd 20 --snapshot_pref hmdb51_to_ucf101_bninception_rgb1_CAN0102_5w --form_w 0.2 --main_w -0.3 --gpu 0 --wt 1 > h2u1_rgb1_CAN_0203_5w.txt &
+
+
+nohup python main_spcan.py ucf101-10 RGB datalist/hmdb51_rgb_test_split_1.txt datalist/ucf101_rgb_train_split_1.txt --arch BNInception --num_segments 3  --lr 0.001 --lr_steps 100 150 --epochs 180 -b 56 -j 8 --dropout 0.8 --gd 20 --snapshot_pref hmdb51_to_ucf101_bninception_rgb1_CAN0405_10w --form_w 0.4 --main_w -0.5 --gpu 2 --wt 1 > h2u1_rgb1_CAN0405_10w.txt &
+
+ ################# CAN Flow #######################
+
+
+nohup python main_spcan.py hmdb51-10 Flow datalist/ucf101_flow_test_split_1.txt datalist/hmdb51_flow_test_split_1.txt --arch BNInception --num_segments 3 --gd 20 --lr 0.001 --lr_steps 180 230 --epochs 250 -b 56 -j 8 --dropout 0.8 --snapshot_pref ucf101_to_hmdb51_bninception_flow1_CAN0405_10w --form_w 0.4 --main_w -0.5 --gpu 1 --wt 1 --flow_pref flow_ > u2h1_flow1_CAN_drop0405_10w.txt & 
+
+nohup python main_spcan.py hmdb51-10 Flow datalist/ucf101_flow_test_split_1.txt datalist/hmdb51_flow_test_split_1.txt --arch BNInception --num_segments 3 --gd 20 --lr 0.001 --lr_steps 180 230 --epochs 250 -b 56 -j 8 --dropout 0.8 --snapshot_pref ucf101_to_hmdb51_bninception_flow1_CAN0203_10w --form_w 0.2 --main_w -0.3 --gpu 2 --wt 1 --flow_pref flow_ > u2h1_flow1_CAN_drop0203_10w.txt & 
+
+
+
+nohup python main_spcan.py hmdb51-10 Flow datalist/ucf101_flow_test_split_1.txt datalist/hmdb51_flow_test_split_1.txt --arch BNInception --num_segments 3 --gd 20 --lr 0.001 --lr_steps 180 230 --epochs 250 -b 56 -j 8 --dropout 0.8 --snapshot_pref ucf101_to_hmdb51_bninception_flow1_CAN0203_10w_0.2wt --form_w 0.2 --main_w -0.3 --gpu 2 --wt 0.2 --flow_pref flow_ > u2h1_flow1_CAN_drop0203_10w_0.2wt.txt & 
+
+nohup python main_spcan.py hmdb51-10 Flow datalist/hmdb51_flow_test_split_1.txt datalist/ucf101_flow_test_split_1.txt --arch BNInception --num_segments 3 --gd 20 --lr 0.001 --lr_steps 180 230 --epochs 250 -b 56 -j 8 --dropout 0.8 --snapshot_pref hmdb51_to_ucf101_bninception_flow1_CAN0203_10w_0.2wt --form_w 0.2 --main_w -0.3 --gpu 1 --wt 0.2 --flow_pref flow_ > h2u1_flow1_CAN_drop0203_10w_0.2wt.txt & 
+
+
+nohup python main_spcan.py hmdb51-10 Flow datalist/hmdb51_flow_test_split_1.txt datalist/ucf101_flow_test_split_1.txt --arch BNInception --num_segments 3 --gd 20 --lr 0.001 --lr_steps 180 230 --epochs 250 -b 56 -j 8 --dropout 0.8 --snapshot_pref hmdb51_to_ucf101_bninception_flow1_CAN0203_10w --form_w 0.2 --main_w -0.3 --gpu 2 --wt 1 --flow_pref flow_ > h2u1_flow1_CAN_drop0203_10w.txt & 
+
+################## TEST ##################
+
+python test_models.py ucf101-10 RGB datalist/ucf101_rgb_test_split_1.txt Result/H2U/hmdb51_to_ucf101_bninception_rgb1_CAN0203_10w_right_rgb_checkpoint.pth.tar --arch BNInception --save_scores h2u_rgb1_0203_10w_right
+
+python test_models.py ucf101-10 RGB datalist/hmdb51_rgb_test_split_1.txt Result/U2H/ucf101_to_hmdb51_bninception_rgb1_CAN0203_10w_rgb_checkpoint.pth.tar --arch BNInception --save_scores h2u_rgb1_0203
+
+python test_models.py ucf101-10 Flow datalist/ucf101_flow_test_split_1.txt Result/H2U/hmdb51_to_ucf101_bninception_flow1_CAN0203_10w_0.2wt_flow_checkpoint.pth.tar --arch BNInception --save_scores h2u_flow1_0203_0.2wt --flow_pref flow_
+
+python test_models.py ucf101-10 RGB datalist/hmdb51_rgb_test_split_1.txt Result/U2H/ucf101_to_hmdb51_bninception_rgb1_CAN0203_10w_right_rgb_checkpoint.pth.tar --arch BNInception --save_scores u2h_rgb1_0203_10w_0.2wt_right_pre0.1
+
+python test_models.py hmdb51-10 Flow datalist/hmdb51_flow_test_split_1.txt Result/U2H/ucf101_to_hmdb51_bninception_flow1_CAN0203_10w_flow_checkpoint.pth.tar --arch BNInception --save_scores u2h_flow1_0203 --flow_pref flow_
+
+python test_models.py hmdb51-10 Flow datalist/hmdb51_flow_test_split_1.txt Result/H2U/hmdb51_to_ucf101_bninception_flow1_DANN_0.3_flow_checkpoint.pth.tar --arch BNInception --save_scores h2u_flow1 --flow_pref flow_
+
+
+################## EVAL ##################
+
+H2U
+python tools/eval_scores.py ../tsn-pytorch_DANN/Result/H2U/h2u_rgb1.npz Result/H2U/h2u_flow1_0.3.npz --score_weights 1 1.5
+
+U2H
+python tools/eval_scores.py ../tsn-pytorch_DANN/Result/U2H/u2h_rgb1_new.npz Result/U2H/u2h_flow1_0.3.npz --score_weights 1 1.5

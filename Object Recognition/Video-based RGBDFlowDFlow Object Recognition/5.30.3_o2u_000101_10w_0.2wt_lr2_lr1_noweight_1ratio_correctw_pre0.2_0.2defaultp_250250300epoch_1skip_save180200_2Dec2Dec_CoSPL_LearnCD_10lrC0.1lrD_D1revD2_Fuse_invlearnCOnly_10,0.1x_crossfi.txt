@@ -1,0 +1,101 @@
+nohup: ignoring input
+/home/wzha8158/.local/lib/python2.7/site-packages/torch/nn/modules/module.py:514: UserWarning: src is not broadcastable to dst, but they have the same number of elements.  Falling back to deprecated pointwise behavior.
+  own_state[name].copy_(param)
+/home/wzha8158/.local/lib/python2.7/site-packages/torchvision/transforms/transforms.py:156: UserWarning: The use of the transforms.Scale transform is deprecated, please use transforms.Resize instead.
+  "please use transforms.Resize instead.")
+args Namespace(MaxStep=0, ReTestSource=False, arch='BNInception', batch_size=48, clip_gradient=20.0, consensus_type='avg', crop_fusion_type='avg', dataset='ucf6', decay=0.0003, defaultPseudoRatio=0.2, defaultPseudoRatio2=0.2, diffDFT2=False, diffS=False, dom_weight=0.1, dropout=0.7, dropout2=0.8, epochs=250, epochs2=250, evalBreakIter=200, eval_freq=5, evaluate=False, fixW=False, flow_prefix='flow_', form_w=0.0, form_w2=0.0, gpu=0, gpus=None, k=3, learnCD=True, loss_type='nll', lr=0.002, lr2=0.001, lr_ratio=0.5, lr_steps=[180.0, 230.0], main_w=-0.1, main_w2=-0.1, max_pseudo=1.0, max_pseudo2=0.5, modality='Flow', modality2='RGB', momentum=0.9, nesterov=True, no_partialbn=False, num_segments=3, pre_ratio=0.2, print_freq=20, pseudo_ratio=1.0, pseudo_ratio2=1.0, resume='', reverse_epoch_ratio=1, save_freq=10, select='1-2', skip=1, snapshot_pref='5.30.3_o2u_000101_10w_0.2wt_lr2_lr1_noweight_1ratio_correctw_pre0.2_0.2defaultp_250250300epoch_1skip_save180200_2Dec2Dec_CoSPL_LearnCD_10lrC0.1lrD_D1revD2_Fuse_invlearnCOnly_10,0.1x_crossfi', sourceTestIter=2000, start_epoch=0, step=0.0003, test_crops=1, test_dropout=0.7, test_segments=15, totalPseudoChange=100, total_epochs=300, train_list='datalist/olympic6_rgb_test_split_1.txt', train_list2='datalist/olympic6_rgb_test_split_2.txt', useCurrentIter=False, useLargeLREpoch=True, usePreT2D=False, usePrevAcc=False, useRatio=False, useSepTrain=True, useT1DorT2='T2', useT1Only=False, useT2CompD=False, usemin=False, usingDoubleDecrease=True, usingDoubleDecrease2=True, usingTriDec=False, usingTriDec2=False, val_list='datalist/ucf6_rgb_train_split_1.txt', val_list2='datalist/ucf6_rgb_train_split_2.txt', weight_decay=0.0005, workers=8, wp=0.055, wt=0.2)
+
+Initializing TSN with base model: BNInception.
+TSN Configurations:
+    input_modality:     Flow
+    num_segments:       3
+    new_length:         5
+    consensus_module:   avg
+    dropout_ratio:      0.7
+        
+Converting the ImageNet model to a flow init model
+Done. Flow model ready...
+
+Initializing TSN with base model: BNInception.
+TSN Configurations:
+    input_modality:     RGB
+    num_segments:       3
+    new_length:         1
+    consensus_module:   avg
+    dropout_ratio:      0.8
+        
+
+Initializing TSN with base model: BNInception.
+TSN Configurations:
+    input_modality:     Flow
+    num_segments:       1
+    new_length:         5
+    consensus_module:   avg
+    dropout_ratio:      0.7
+        
+Converting the ImageNet model to a flow init model
+Done. Flow model ready...
+
+Initializing TSN with base model: BNInception.
+TSN Configurations:
+    input_modality:     RGB
+    num_segments:       1
+    new_length:         1
+    consensus_module:   avg
+    dropout_ratio:      0.7
+        
+form_w 0.0 main_w -0.1
+group: first_conv_weight has 1 params, lr_mult: 5, decay_mult: 1
+group: first_conv_bias has 1 params, lr_mult: 10, decay_mult: 0
+group: normal_weight has 69 params, lr_mult: 1, decay_mult: 1
+group: normal_bias has 69 params, lr_mult: 2, decay_mult: 0
+group: BN scale/shift has 2 params, lr_mult: 1, decay_mult: 0
+
+Epoch 0 lr_decay: 1.0 disc_w_decay: 0.2
+Val Epoch: [0]	Time 49.5394279957 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 20.214	Prec2@1 20.214	Domain 91.201	Domain2 1.070	
+Test Epoch: [0]	Time 214.564501047 	Prec@1 19.857	Prec2@1 19.857	Domain 99.707	
+Select error/total selected = 0/0
+batchsizes: S, Pseu, d_all, dt 24 0 0 24
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000175952911377
+main_cospcan_ratio_2Dec_prev_save_crossfispl_double_learnCD.py:2351: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  log_probs_flat = F.log_softmax(logits_flat)
+Epoch: [0][0/15], lr: 0.00400	Time 33.896 (33.896)	Data 0.000 (0.000)	Loss 1.7929 (1.7929)	Prec@1 33.333 (33.333)	Prec2@1 16.667 (16.667)	Domain 45.833 (45.833)	Domain2 54.167 (54.167)	Wmain: 0.100 	Wmain_2: 0.100	l:0.000
+train_num 0 total_epoch_acc_s 0
+
+Epoch 1 lr_decay: 0.94391346936 disc_w_decay: 0.195412750303
+Val Epoch: [1]	Time 47.8428258896 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 18.430	Prec2@1 31.867	Domain 47.444	Domain2 54.340	
+Select error/total selected = 0/0
+batchsizes: S, Pseu, d_all, dt 24 0 0 24
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000164031982422
+Epoch: [1][0/15], lr: 0.00378	Time 24.186 (24.186)	Data 0.000 (0.000)	Loss 1.4975 (1.4975)	Prec@1 41.667 (41.667)	Prec2@1 62.500 (62.500)	Domain 47.917 (47.917)	Domain2 52.083 (52.083)	Wmain: 0.100 	Wmain_2: 0.100	l:0.020
+clipping gradient: 23.1488863172 with coef 0.863972448866
+clipping gradient: 44.9016529938 with coef 0.445417900378
+train_num 0 total_epoch_acc_s 0
+
+Epoch 2 lr_decay: 0.894656884184 disc_w_decay: 0.190930714905
+Val Epoch: [2]	Time 47.9515278339 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 18.074	Prec2@1 65.398	Domain 6.183	Domain2 64.447	
+Select error/total selected = 0/0
+batchsizes: S, Pseu, d_all, dt 24 0 0 24
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000272035598755
+clipping gradient: 31.1325411861 with coef 0.642414632344
+Epoch: [2][0/15], lr: 0.00358	Time 22.225 (22.225)	Data 0.000 (0.000)	Loss 1.5356 (1.5356)	Prec@1 33.333 (33.333)	Prec2@1 66.667 (66.667)	Domain 50.000 (50.000)	Domain2 62.500 (62.500)	Wmain: 0.100 	Wmain_2: 0.100	l:0.040
+clipping gradient: 22.1691203142 with coef 0.902155778692
+clipping gradient: 22.0301201412 with coef 0.907847976854
+clipping gradient: 36.3118599776 with coef 0.550784234472
+clipping gradient: 34.0874461028 with coef 0.586726266899
+clipping gradient: 21.4570774979 with coef 0.932093385131
+clipping gradient: 24.8317369239 with coef 0.805420903953
+train_num 0 total_epoch_acc_s 0
+
+Epoch 3 lr_decay: 0.851008182997 disc_w_decay: 0.186551480584
+Val Epoch: [3]	Time 47.8452320099 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 18.668	Prec2@1 68.966	Domain 15.696	Domain2 76.338	
+Select error/total selected = 0/0
+batchsizes: S, Pseu, d_all, dt 24 0 0 24
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000169992446899
+clipping gradient: 21.0914941085 with coef 0.948249559615
+Epoch: [3][0/15], lr: 0.00340	Time 18.996 (18.996)	Data 0.000 (0.000)	Loss 1.3435 (1.3435)	Prec@1 50.000 (50.000)	Prec2@1 70.833 (70.833)	Domain 56.250 (56.250)	Domain2 62.500 (62.500)	Wmain: 0.100 	Wmain_2: 0.100	l:0.060
+clipping gradient: 34.2941900712 with coef 0.583189162902

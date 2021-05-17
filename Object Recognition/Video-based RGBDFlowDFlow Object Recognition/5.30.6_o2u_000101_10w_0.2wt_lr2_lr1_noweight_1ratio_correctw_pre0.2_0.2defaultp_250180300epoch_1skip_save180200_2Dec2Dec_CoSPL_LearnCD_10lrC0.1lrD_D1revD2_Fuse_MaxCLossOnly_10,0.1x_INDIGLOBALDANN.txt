@@ -1,0 +1,53 @@
+nohup: ignoring input
+/home/wzha8158/.local/lib/python2.7/site-packages/torch/nn/modules/module.py:514: UserWarning: src is not broadcastable to dst, but they have the same number of elements.  Falling back to deprecated pointwise behavior.
+  own_state[name].copy_(param)
+/home/wzha8158/.local/lib/python2.7/site-packages/torchvision/transforms/transforms.py:156: UserWarning: The use of the transforms.Scale transform is deprecated, please use transforms.Resize instead.
+  "please use transforms.Resize instead.")
+args Namespace(MaxStep=0, ReTestSource=False, arch='BNInception', batch_size=48, clip_gradient=20.0, consensus_type='avg', crop_fusion_type='avg', dataset='ucf6', decay=0.0003, defaultPseudoRatio=0.2, defaultPseudoRatio2=0.2, diffDFT2=False, diffS=False, dom_weight=0.1, dropout=0.7, dropout2=0.8, epochs=250, epochs2=180, evalBreakIter=200, eval_freq=5, evaluate=False, fixW=False, flow_prefix='flow_', form_w=0.0, form_w2=0.0, gpu=0, gpus=None, k=3, learnCD=True, loss_type='nll', lr=0.002, lr2=0.001, lr_ratio=0.5, lr_steps=[180.0, 230.0], main_w=-0.1, main_w2=-0.1, max_pseudo=1.0, max_pseudo2=0.5, modality='Flow', modality2='RGB', momentum=0.9, nesterov=True, no_partialbn=False, num_segments=3, pre_ratio=0.2, print_freq=20, pseudo_ratio=1.0, pseudo_ratio2=1.0, resume='', reverse_epoch_ratio=1, save_freq=10, select='1-2', skip=1, snapshot_pref='5.30.6_o2u_000101_10w_0.2wt_lr2_lr1_noweight_1ratio_correctw_pre0.2_0.2defaultp_250180300epoch_1skip_save180200_2Dec2Dec_CoSPL_LearnCD_10lrC0.1lrD_D1revD2_Fuse_MaxCLossOnly_10,0.1x_INDIGLOBALDANN', sourceTestIter=2000, start_epoch=0, step=0.0003, test_crops=1, test_dropout=0.7, test_segments=15, totalPseudoChange=100, total_epochs=300, train_list='datalist/olympic6_rgb_test_split_1.txt', train_list2='datalist/olympic6_rgb_test_split_2.txt', useCurrentIter=False, useLargeLREpoch=True, usePreT2D=False, usePrevAcc=False, useRatio=False, useSepTrain=True, useT1DorT2='T2', useT1Only=False, useT2CompD=False, usemin=False, usingDoubleDecrease=True, usingDoubleDecrease2=True, usingTriDec=False, usingTriDec2=False, val_list='datalist/ucf6_rgb_train_split_1.txt', val_list2='datalist/ucf6_rgb_train_split_2.txt', weight_decay=0.0005, workers=8, wp=0.055, wt=0.2)
+
+Initializing TSN with base model: BNInception.
+TSN Configurations:
+    input_modality:     Flow
+    num_segments:       3
+    new_length:         5
+    consensus_module:   avg
+    dropout_ratio:      0.7
+        
+Converting the ImageNet model to a flow init model
+Done. Flow model ready...
+
+Initializing TSN with base model: BNInception.
+TSN Configurations:
+    input_modality:     RGB
+    num_segments:       3
+    new_length:         1
+    consensus_module:   avg
+    dropout_ratio:      0.8
+        
+
+Initializing TSN with base model: BNInception.
+TSN Configurations:
+    input_modality:     Flow
+    num_segments:       1
+    new_length:         5
+    consensus_module:   avg
+    dropout_ratio:      0.7
+        
+Converting the ImageNet model to a flow init model
+Done. Flow model ready...
+
+Initializing TSN with base model: BNInception.
+TSN Configurations:
+    input_modality:     RGB
+    num_segments:       1
+    new_length:         1
+    consensus_module:   avg
+    dropout_ratio:      0.7
+        
+form_w 0.0 main_w -0.1
+group: first_conv_weight has 1 params, lr_mult: 5, decay_mult: 1
+group: first_conv_bias has 1 params, lr_mult: 10, decay_mult: 0
+group: normal_weight has 69 params, lr_mult: 1, decay_mult: 1
+group: normal_bias has 69 params, lr_mult: 2, decay_mult: 0
+group: BN scale/shift has 2 params, lr_mult: 1, decay_mult: 0
+

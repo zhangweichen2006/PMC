@@ -1,0 +1,974 @@
+/home/wzha8158/.local/lib/python2.7/site-packages/torch/nn/modules/module.py:514: UserWarning: src is not broadcastable to dst, but they have the same number of elements.  Falling back to deprecated pointwise behavior.
+  own_state[name].copy_(param)
+/home/wzha8158/.local/lib/python2.7/site-packages/torchvision/transforms/transforms.py:156: UserWarning: The use of the transforms.Scale transform is deprecated, please use transforms.Resize instead.
+  "please use transforms.Resize instead.")
+
+Initializing TSN with base model: BNInception.
+TSN Configurations:
+    input_modality:     Flow
+    num_segments:       3
+    new_length:         5
+    consensus_module:   avg
+    dropout_ratio:      0.7
+        
+Converting the ImageNet model to a flow init model
+Done. Flow model ready...
+
+Initializing TSN with base model: BNInception.
+TSN Configurations:
+    input_modality:     RGB
+    num_segments:       3
+    new_length:         1
+    consensus_module:   avg
+    dropout_ratio:      0.8
+        
+
+Initializing TSN with base model: BNInception.
+TSN Configurations:
+    input_modality:     Flow
+    num_segments:       1
+    new_length:         5
+    consensus_module:   avg
+    dropout_ratio:      0.7
+        
+Converting the ImageNet model to a flow init model
+Done. Flow model ready...
+
+Initializing TSN with base model: BNInception.
+TSN Configurations:
+    input_modality:     RGB
+    num_segments:       1
+    new_length:         1
+    consensus_module:   avg
+    dropout_ratio:      0.7
+        
+form_w 0.0 main_w -0.1
+group: first_conv_weight has 1 params, lr_mult: 5, decay_mult: 1
+group: first_conv_bias has 1 params, lr_mult: 10, decay_mult: 0
+group: normal_weight has 69 params, lr_mult: 1, decay_mult: 1
+group: normal_bias has 69 params, lr_mult: 2, decay_mult: 0
+group: BN scale/shift has 2 params, lr_mult: 1, decay_mult: 0
+
+Epoch 0 lr_decay: 1.0 disc_w_decay: 0.2
+Val Epoch: [0]	Time 47.8480889797 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 17.479	Prec2@1 26.278	Domain 88.585	Domain2 2.259	
+Test Epoch: [0]	Time 209.473984957 	Prec@1 18.430	Prec2@1 26.754	Domain 97.099	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000162124633789
+main_cospcan_ratio_2Dec_prev_save_cospl_learnCD.py:2323: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  log_probs_flat = F.log_softmax(logits_flat)
+Epoch: [0][0/15], lr: 0.00400	Time 10.512 (10.512)	Data 0.000 (0.000)	Loss 1.7875 (1.7875)	Prec@1 8.333 (8.333)	Prec2@1 29.167 (29.167)	Domain 47.917 (47.917)	Domain2 45.833 (45.833)	Wmain: 0.100 	Wmain_2: 0.100	l:0.000
+clipping gradient: 21.6515759417 with coef 0.92372028964
+train_num 0 total_epoch_acc_s 0
+
+Epoch 1 lr_decay: 0.94391346936 disc_w_decay: 0.195412750303
+Val Epoch: [1]	Time 46.4505279064 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 17.955	Prec2@1 37.218	Domain 1.784	Domain2 86.445	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000149011611938
+Epoch: [1][0/15], lr: 0.00378	Time 4.918 (4.918)	Data 0.000 (0.000)	Loss 1.6133 (1.6133)	Prec@1 41.667 (41.667)	Prec2@1 45.833 (45.833)	Domain 52.083 (52.083)	Domain2 50.000 (50.000)	Wmain: 0.100 	Wmain_2: 0.100	l:0.020
+clipping gradient: 48.2823974723 with coef 0.414229637447
+train_num 0 total_epoch_acc_s 0
+
+Epoch 2 lr_decay: 0.894656884184 disc_w_decay: 0.190930714905
+Val Epoch: [2]	Time 46.3119552135 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 19.738	Prec2@1 54.697	Domain 33.532	Domain2 96.671	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000344038009644
+clipping gradient: 20.5681327129 with coef 0.972378012103
+Epoch: [2][0/15], lr: 0.00358	Time 4.892 (4.892)	Data 0.000 (0.000)	Loss 1.4544 (1.4544)	Prec@1 45.833 (45.833)	Prec2@1 70.833 (70.833)	Domain 47.917 (47.917)	Domain2 50.000 (50.000)	Wmain: 0.100 	Wmain_2: 0.100	l:0.040
+clipping gradient: 26.3848560218 with coef 0.758010579382
+clipping gradient: 23.3404450462 with coef 0.85688169015
+clipping gradient: 26.6993686394 with coef 0.749081383538
+clipping gradient: 25.7013597331 with coef 0.778168945444
+clipping gradient: 28.021917405 with coef 0.713727034127
+clipping gradient: 34.4349263013 with coef 0.580805657168
+clipping gradient: 39.1101205327 with coef 0.511376588146
+clipping gradient: 21.16441373 with coef 0.944982471764
+clipping gradient: 23.3683567675 with coef 0.85585821027
+clipping gradient: 27.4968120097 with coef 0.727357047535
+train_num 0 total_epoch_acc_s 0
+
+Epoch 3 lr_decay: 0.851008182997 disc_w_decay: 0.186551480584
+Val Epoch: [3]	Time 46.2654850483 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 15.696	Prec2@1 58.621	Domain 44.352	Domain2 86.207	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000334024429321
+Epoch: [3][0/15], lr: 0.00340	Time 4.840 (4.840)	Data 0.000 (0.000)	Loss 1.4948 (1.4948)	Prec@1 50.000 (50.000)	Prec2@1 83.333 (83.333)	Domain 54.167 (54.167)	Domain2 64.583 (64.583)	Wmain: 0.100 	Wmain_2: 0.100	l:0.060
+clipping gradient: 22.9687139093 with coef 0.870749667526
+clipping gradient: 21.0892343702 with coef 0.948351165761
+clipping gradient: 22.37221069 with coef 0.893966192126
+train_num 0 total_epoch_acc_s 0
+
+Epoch 4 lr_decay: 0.812025283127 disc_w_decay: 0.18227268947
+Val Epoch: [4]	Time 46.2744030952 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 24.851	Prec2@1 72.652	Domain 36.623	Domain2 85.256	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000152111053467
+Epoch: [4][0/15], lr: 0.00325	Time 4.862 (4.862)	Data 0.000 (0.000)	Loss 1.2707 (1.2707)	Prec@1 50.000 (50.000)	Prec2@1 95.833 (95.833)	Domain 43.750 (43.750)	Domain2 64.583 (64.583)	Wmain: 0.100 	Wmain_2: 0.100	l:0.080
+clipping gradient: 22.3169591965 with coef 0.896179440216
+clipping gradient: 21.4456715276 with coef 0.932589122904
+clipping gradient: 22.5763415856 with coef 0.885883123455
+clipping gradient: 32.0994970425 with coef 0.623062721934
+clipping gradient: 29.5935725181 with coef 0.675822426906
+clipping gradient: 21.2145712577 with coef 0.942748253407
+clipping gradient: 22.9597270698 with coef 0.871090494204
+train_num 0 total_epoch_acc_s 0
+
+Epoch 5 lr_decay: 0.776969504241 disc_w_decay: 0.178092037773
+Val Epoch: [5]	Time 46.2065291405 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 20.927	Prec2@1 81.213	Domain 79.548	Domain2 80.380	
+Test Epoch: [5]	Time 209.382931948 	Prec@1 27.586	Prec2@1 80.975	Domain 59.881	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000432014465332
+Epoch: [5][0/15], lr: 0.00311	Time 4.976 (4.976)	Data 0.000 (0.000)	Loss 1.2157 (1.2157)	Prec@1 54.167 (54.167)	Prec2@1 87.500 (87.500)	Domain 58.333 (58.333)	Domain2 54.167 (54.167)	Wmain: 0.100 	Wmain_2: 0.100	l:0.100
+clipping gradient: 21.4745388817 with coef 0.931335481064
+clipping gradient: 23.4566656682 with coef 0.852636102801
+clipping gradient: 24.6568032773 with coef 0.811135157105
+clipping gradient: 32.6504815184 with coef 0.612548393466
+train_num 0 total_epoch_acc_s 0
+
+Epoch 6 lr_decay: 0.745252966542 disc_w_decay: 0.174007274541
+Val Epoch: [6]	Time 46.4731771946 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 26.635	Prec2@1 79.667	Domain 41.736	Domain2 86.207	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000338077545166
+Epoch: [6][0/15], lr: 0.00298	Time 4.906 (4.906)	Data 0.000 (0.000)	Loss 1.1387 (1.1387)	Prec@1 41.667 (41.667)	Prec2@1 95.833 (95.833)	Domain 45.833 (45.833)	Domain2 56.250 (56.250)	Wmain: 0.100 	Wmain_2: 0.100	l:0.119
+clipping gradient: 25.6627571435 with coef 0.779339487497
+clipping gradient: 24.6838834163 with coef 0.810245278778
+train_num 0 total_epoch_acc_s 0
+
+Epoch 7 lr_decay: 0.716401606779 disc_w_decay: 0.170016200454
+Val Epoch: [7]	Time 46.4236121178 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 26.992	Prec2@1 49.346	Domain 41.617	Domain2 80.380	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000276803970337
+clipping gradient: 31.8198932642 with coef 0.628537620599
+Epoch: [7][0/15], lr: 0.00287	Time 4.897 (4.897)	Data 0.000 (0.000)	Loss 1.4920 (1.4920)	Prec@1 50.000 (50.000)	Prec2@1 79.167 (79.167)	Domain 50.000 (50.000)	Domain2 58.333 (58.333)	Wmain: 0.100 	Wmain_2: 0.100	l:0.139
+clipping gradient: 29.8557754524 with coef 0.669887138987
+clipping gradient: 34.3765239956 with coef 0.581792388392
+clipping gradient: 26.3763376396 with coef 0.758255383036
+clipping gradient: 24.9118608527 with coef 0.802830431588
+train_num 0 total_epoch_acc_s 0
+
+Epoch 8 lr_decay: 0.690028635604 disc_w_decay: 0.166116666634
+Val Epoch: [8]	Time 46.3076059818 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 29.132	Prec2@1 73.484	Domain 64.328	Domain2 66.350	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000291109085083
+Epoch: [8][0/15], lr: 0.00276	Time 4.919 (4.919)	Data 0.000 (0.000)	Loss 1.2640 (1.2640)	Prec@1 54.167 (54.167)	Prec2@1 95.833 (95.833)	Domain 45.833 (45.833)	Domain2 45.833 (45.833)	Wmain: 0.100 	Wmain_2: 0.100	l:0.159
+clipping gradient: 23.9283208778 with coef 0.835829647308
+train_num 0 total_epoch_acc_s 0
+
+Epoch 9 lr_decay: 0.665815137616 disc_w_decay: 0.16230657349
+Val Epoch: [9]	Time 46.4539999962 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 33.413	Prec2@1 75.862	Domain 53.389	Domain2 70.392	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000200986862183
+Epoch: [9][0/15], lr: 0.00266	Time 5.029 (5.029)	Data 0.000 (0.000)	Loss 1.0295 (1.0295)	Prec@1 54.167 (54.167)	Prec2@1 95.833 (95.833)	Domain 47.917 (47.917)	Domain2 54.167 (54.167)	Wmain: 0.100 	Wmain_2: 0.100	l:0.178
+clipping gradient: 27.8058028949 with coef 0.719274321105
+clipping gradient: 32.7861496117 with coef 0.610013686781
+train_num 0 total_epoch_acc_s 0
+
+Epoch 10 lr_decay: 0.643495658493 disc_w_decay: 0.15858386959
+Val Epoch: [10]	Time 46.4330499172 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 37.574	Prec2@1 76.219	Domain 59.453	Domain2 78.240	
+Test Epoch: [10]	Time 209.648850918 	Prec@1 36.980	Prec2@1 75.981	Domain 49.092	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000148057937622
+Epoch: [10][0/15], lr: 0.00257	Time 4.898 (4.898)	Data 0.000 (0.000)	Loss 0.9129 (0.9129)	Prec@1 66.667 (66.667)	Prec2@1 87.500 (87.500)	Domain 66.667 (66.667)	Domain2 52.083 (52.083)	Wmain: 0.100 	Wmain_2: 0.100	l:0.197
+clipping gradient: 22.0618576595 with coef 0.906541974329
+train_num 0 total_epoch_acc_s 0
+
+Epoch 11 lr_decay: 0.622847338579 disc_w_decay: 0.154946550551
+Val Epoch: [11]	Time 46.4174530506 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 35.791	Prec2@1 81.213	Domain 56.599	Domain2 78.835	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000168085098267
+Epoch: [11][0/15], lr: 0.00249	Time 4.862 (4.862)	Data 0.000 (0.000)	Loss 0.9403 (0.9403)	Prec@1 66.667 (66.667)	Prec2@1 100.000 (100.000)	Domain 58.333 (58.333)	Domain2 56.250 (56.250)	Wmain: 0.100 	Wmain_2: 0.100	l:0.217
+clipping gradient: 21.654711507 with coef 0.923586536517
+clipping gradient: 35.341937319 with coef 0.565899934105
+train_num 0 total_epoch_acc_s 0
+
+Epoch 12 lr_decay: 0.60368161052 disc_w_decay: 0.151392657966
+Val Epoch: [12]	Time 46.4445939064 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 35.315	Prec2@1 81.213	Domain 63.971	Domain2 67.895	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000150918960571
+Epoch: [12][0/15], lr: 0.00241	Time 4.984 (4.984)	Data 0.000 (0.000)	Loss 0.6632 (0.6632)	Prec@1 75.000 (75.000)	Prec2@1 100.000 (100.000)	Domain 54.167 (54.167)	Domain2 58.333 (58.333)	Wmain: 0.100 	Wmain_2: 0.100	l:0.235
+train_num 0 total_epoch_acc_s 0
+
+Epoch 13 lr_decay: 0.585837778696 disc_w_decay: 0.147920278344
+Val Epoch: [13]	Time 46.4485599995 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 41.260	Prec2@1 77.765	Domain 35.910	Domain2 66.587	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000252962112427
+Epoch: [13][0/15], lr: 0.00234	Time 4.961 (4.961)	Data 0.000 (0.000)	Loss 0.8203 (0.8203)	Prec@1 70.833 (70.833)	Prec2@1 91.667 (91.667)	Domain 66.667 (66.667)	Domain2 52.083 (52.083)	Wmain: 0.100 	Wmain_2: 0.100	l:0.254
+train_num 0 total_epoch_acc_s 0
+
+Epoch 14 lr_decay: 0.569177998713 disc_w_decay: 0.144527542084
+Val Epoch: [14]	Time 46.8527441025 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 42.093	Prec2@1 80.856	Domain 63.377	Domain2 70.749	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000186920166016
+Epoch: [14][0/15], lr: 0.00228	Time 5.080 (5.080)	Data 0.000 (0.000)	Loss 0.6526 (0.6526)	Prec@1 75.000 (75.000)	Prec2@1 100.000 (100.000)	Domain 62.500 (62.500)	Domain2 56.250 (56.250)	Wmain: 0.100 	Wmain_2: 0.100	l:0.273
+clipping gradient: 37.006129112 with coef 0.540451013925
+clipping gradient: 24.0763383942 with coef 0.830691098978
+train_num 0 total_epoch_acc_s 0
+
+Epoch 15 lr_decay: 0.55358331165 disc_w_decay: 0.141212622466
+Val Epoch: [15]	Time 46.8097980022 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 43.995	Prec2@1 85.493	Domain 53.627	Domain2 64.566	
+Test Epoch: [15]	Time 211.837836027 	Prec@1 41.974	Prec2@1 82.878	Domain 40.341	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000153064727783
+Epoch: [15][0/15], lr: 0.00221	Time 4.880 (4.880)	Data 0.000 (0.000)	Loss 1.3272 (1.3272)	Prec@1 50.000 (50.000)	Prec2@1 100.000 (100.000)	Domain 52.083 (52.083)	Domain2 52.083 (52.083)	Wmain: 0.100 	Wmain_2: 0.100	l:0.291
+clipping gradient: 20.0361277685 with coef 0.998196868731
+clipping gradient: 20.5642209192 with coef 0.972562981043
+clipping gradient: 25.4304316747 with coef 0.786459319915
+clipping gradient: 22.2709002146 with coef 0.898032850371
+train_num 0 total_epoch_acc_s 0
+
+Epoch 16 lr_decay: 0.538950482107 disc_w_decay: 0.137973734668
+Val Epoch: [16]	Time 46.6508030891 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 44.590	Prec2@1 80.856	Domain 55.529	Domain2 80.143	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000153064727783
+Epoch: [16][0/15], lr: 0.00216	Time 5.446 (5.446)	Data 0.000 (0.000)	Loss 0.6139 (0.6139)	Prec@1 79.167 (79.167)	Prec2@1 95.833 (95.833)	Domain 58.333 (58.333)	Domain2 66.667 (66.667)	Wmain: 0.100 	Wmain_2: 0.100	l:0.310
+clipping gradient: 22.8152913699 with coef 0.876605066126
+clipping gradient: 21.7767674516 with coef 0.918409954297
+train_num 0 total_epoch_acc_s 0
+
+Epoch 17 lr_decay: 0.525189455285 disc_w_decay: 0.134809134805
+Val Epoch: [17]	Time 46.8734021187 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 41.023	Prec2@1 83.353	Domain 64.566	Domain2 77.170	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000158071517944
+Epoch: [17][0/15], lr: 0.00210	Time 4.869 (4.869)	Data 0.000 (0.000)	Loss 0.9199 (0.9199)	Prec@1 75.000 (75.000)	Prec2@1 95.833 (95.833)	Domain 41.667 (41.667)	Domain2 72.917 (72.917)	Wmain: 0.100 	Wmain_2: 0.100	l:0.327
+clipping gradient: 22.7923598264 with coef 0.877487024262
+train_num 0 total_epoch_acc_s 0
+
+Epoch 18 lr_decay: 0.512221295536 disc_w_decay: 0.131717118991
+Val Epoch: [18]	Time 46.4957921505 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 42.093	Prec2@1 80.499	Domain 40.309	Domain2 70.630	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000151872634888
+Epoch: [18][0/15], lr: 0.00205	Time 4.871 (4.871)	Data 0.000 (0.000)	Loss 0.4401 (0.4401)	Prec@1 79.167 (79.167)	Prec2@1 100.000 (100.000)	Domain 39.583 (39.583)	Domain2 56.250 (56.250)	Wmain: 0.100 	Wmain_2: 0.100	l:0.345
+clipping gradient: 22.454392963 with coef 0.890694307922
+clipping gradient: 23.0471396166 with coef 0.867786646531
+clipping gradient: 23.2533091861 with coef 0.860092636275
+clipping gradient: 26.8754628107 with coef 0.744173231207
+train_num 0 total_epoch_acc_s 0
+
+Epoch 19 lr_decay: 0.499976502761 disc_w_decay: 0.12869602242
+Val Epoch: [19]	Time 46.3379600048 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 44.471	Prec2@1 78.240	Domain 61.237	Domain2 74.911	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000152111053467
+clipping gradient: 21.8353056781 with coef 0.915947790924
+Epoch: [19][0/15], lr: 0.00200	Time 4.928 (4.928)	Data 0.000 (0.000)	Loss 0.5727 (0.5727)	Prec@1 75.000 (75.000)	Prec2@1 91.667 (91.667)	Domain 41.667 (41.667)	Domain2 62.500 (62.500)	Wmain: 0.100 	Wmain_2: 0.100	l:0.363
+clipping gradient: 23.7600061443 with coef 0.841750624077
+clipping gradient: 23.1624853111 with coef 0.863465199498
+clipping gradient: 22.5998044949 with coef 0.884963407738
+clipping gradient: 20.962063427 with coef 0.954104545558
+train_num 0 total_epoch_acc_s 0
+
+Epoch 20 lr_decay: 0.488393627875 disc_w_decay: 0.125744218471
+Val Epoch: [20]	Time 46.6709580421 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 45.898	Prec2@1 77.646	Domain 26.754	Domain2 80.975	
+Test Epoch: [20]	Time 209.658062935 	Prec@1 54.340	Prec2@1 79.429	Domain 54.158	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000226020812988
+Epoch: [20][0/15], lr: 0.00195	Time 4.965 (4.965)	Data 0.000 (0.000)	Loss 0.7840 (0.7840)	Prec@1 66.667 (66.667)	Prec2@1 100.000 (100.000)	Domain 62.500 (62.500)	Domain2 54.167 (54.167)	Wmain: 0.100 	Wmain_2: 0.100	l:0.380
+clipping gradient: 21.1352297155 with coef 0.946287325436
+clipping gradient: 20.8271646508 with coef 0.960284337085
+clipping gradient: 22.0124698088 with coef 0.908575919637
+/usr/lib/python2.7/dist-packages/matplotlib/pyplot.py:516: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  max_open_warning, RuntimeWarning)
+train_num 0 total_epoch_acc_s 0
+
+Epoch 21 lr_decay: 0.477418126833 disc_w_decay: 0.12286011783
+Val Epoch: [21]	Time 46.5230009556 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 41.855	Prec2@1 75.505	Domain 45.184	Domain2 71.225	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000274181365967
+Epoch: [21][0/15], lr: 0.00191	Time 5.008 (5.008)	Data 0.000 (0.000)	Loss 0.5580 (0.5580)	Prec@1 83.333 (83.333)	Prec2@1 95.833 (95.833)	Domain 66.667 (66.667)	Domain2 35.417 (35.417)	Wmain: 0.100 	Wmain_2: 0.100	l:0.397
+train_num 0 total_epoch_acc_s 0
+
+Epoch 22 lr_decay: 0.46700140638 disc_w_decay: 0.120042167639
+Val Epoch: [22]	Time 47.0937919617 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 43.520	Prec2@1 71.106	Domain 59.096	Domain2 70.630	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000167846679688
+Epoch: [22][0/15], lr: 0.00187	Time 5.498 (5.498)	Data 0.000 (0.000)	Loss 0.8369 (0.8369)	Prec@1 66.667 (66.667)	Prec2@1 95.833 (95.833)	Domain 66.667 (66.667)	Domain2 66.667 (66.667)	Wmain: 0.100 	Wmain_2: 0.100	l:0.414
+clipping gradient: 20.8483068655 with coef 0.959310515189
+train_num 0 total_epoch_acc_s 0
+
+Epoch 23 lr_decay: 0.457100024919 disc_w_decay: 0.117288850653
+Val Epoch: [23]	Time 46.4546318054 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 41.736	Prec2@1 83.829	Domain 38.763	Domain2 75.743	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000230073928833
+Epoch: [23][0/15], lr: 0.00183	Time 5.019 (5.019)	Data 0.000 (0.000)	Loss 0.5056 (0.5056)	Prec@1 83.333 (83.333)	Prec2@1 100.000 (100.000)	Domain 45.833 (45.833)	Domain2 50.000 (50.000)	Wmain: 0.100 	Wmain_2: 0.100	l:0.430
+clipping gradient: 35.7718757019 with coef 0.559098442773
+train_num 0 total_epoch_acc_s 0
+
+Epoch 24 lr_decay: 0.44767501972 disc_w_decay: 0.11459868443
+Val Epoch: [24]	Time 48.1170060635 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 46.017	Prec2@1 79.548	Domain 44.114	Domain2 71.463	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.0001540184021
+Epoch: [24][0/15], lr: 0.00179	Time 4.849 (4.849)	Data 0.000 (0.000)	Loss 0.5243 (0.5243)	Prec@1 79.167 (79.167)	Prec2@1 95.833 (95.833)	Domain 66.667 (66.667)	Domain2 60.417 (60.417)	Wmain: 0.100 	Wmain_2: 0.100	l:0.446
+clipping gradient: 22.1779729031 with coef 0.901795673004
+clipping gradient: 20.252190656 with coef 0.987547487563
+clipping gradient: 20.2399314142 with coef 0.988145640948
+clipping gradient: 23.9092159543 with coef 0.836497526236
+train_num 0 total_epoch_acc_s 0
+
+Epoch 25 lr_decay: 0.438691337651 disc_w_decay: 0.111970220528
+Val Epoch: [25]	Time 47.8558540344 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 41.617	Prec2@1 80.262	Domain 39.120	Domain2 75.149	
+Test Epoch: [25]	Time 209.827765942 	Prec@1 56.005	Prec2@1 80.618	Domain 60.040	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.0001540184021
+clipping gradient: 21.6437830895 with coef 0.924052875476
+Epoch: [25][0/15], lr: 0.00175	Time 4.956 (4.956)	Data 0.000 (0.000)	Loss 1.1381 (1.1381)	Prec@1 50.000 (50.000)	Prec2@1 100.000 (100.000)	Domain 62.500 (62.500)	Domain2 68.750 (68.750)	Wmain: 0.100 	Wmain_2: 0.100	l:0.462
+train_num 0 total_epoch_acc_s 0
+
+Epoch 26 lr_decay: 0.430117351209 disc_w_decay: 0.109402043727
+Val Epoch: [26]	Time 47.210750103 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 46.730	Prec2@1 81.332	Domain 44.471	Domain2 71.225	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000251054763794
+Epoch: [26][0/15], lr: 0.00172	Time 4.943 (4.943)	Data 0.000 (0.000)	Loss 0.5970 (0.5970)	Prec@1 70.833 (70.833)	Prec2@1 100.000 (100.000)	Domain 52.083 (52.083)	Domain2 60.417 (60.417)	Wmain: 0.100 	Wmain_2: 0.100	l:0.478
+train_num 0 total_epoch_acc_s 0
+
+Epoch 27 lr_decay: 0.421924445237 disc_w_decay: 0.106892771267
+Val Epoch: [27]	Time 46.3011090755 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 49.108	Prec2@1 84.780	Domain 50.654	Domain2 70.630	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000155925750732
+Epoch: [27][0/15], lr: 0.00169	Time 4.896 (4.896)	Data 0.000 (0.000)	Loss 0.5219 (0.5219)	Prec@1 79.167 (79.167)	Prec2@1 100.000 (100.000)	Domain 60.417 (60.417)	Domain2 60.417 (60.417)	Wmain: 0.100 	Wmain_2: 0.100	l:0.493
+clipping gradient: 21.3448429354 with coef 0.936994479677
+train_num 0 total_epoch_acc_s 0
+
+Epoch 28 lr_decay: 0.4140866625 disc_w_decay: 0.104441052104
+Val Epoch: [28]	Time 46.4604291916 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 44.709	Prec2@1 73.484	Domain 44.828	Domain2 73.722	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000154972076416
+Epoch: [28][0/15], lr: 0.00166	Time 4.864 (4.864)	Data 0.000 (0.000)	Loss 0.8003 (0.8003)	Prec@1 70.833 (70.833)	Prec2@1 100.000 (100.000)	Domain 54.167 (54.167)	Domain2 64.583 (64.583)	Wmain: 0.100 	Wmain_2: 0.100	l:0.508
+clipping gradient: 33.004405914 with coef 0.605979700169
+clipping gradient: 22.9706774132 with coef 0.870675236967
+clipping gradient: 28.1013366947 with coef 0.711709916765
+train_num 0 total_epoch_acc_s 0
+
+Epoch 29 lr_decay: 0.406580398527 disc_w_decay: 0.102045566181
+Val Epoch: [29]	Time 46.527436018 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 42.925	Prec2@1 82.878	Domain 60.642	Domain2 70.273	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000150918960571
+clipping gradient: 20.165075115 with coef 0.991813811055
+Epoch: [29][0/15], lr: 0.00163	Time 4.946 (4.946)	Data 0.000 (0.000)	Loss 0.7975 (0.7975)	Prec@1 70.833 (70.833)	Prec2@1 95.833 (95.833)	Domain 54.167 (54.167)	Domain2 39.583 (39.583)	Wmain: 0.100 	Wmain_2: 0.100	l:0.523
+clipping gradient: 32.2766620738 with coef 0.619642760899
+train_num 0 total_epoch_acc_s 0
+
+Epoch 30 lr_decay: 0.399384137858 disc_w_decay: 0.0997050237185
+Val Epoch: [30]	Time 46.4823188782 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 41.141	Prec2@1 84.185	Domain 38.882	Domain2 64.090	
+Test Epoch: [30]	Time 209.724961996 	Prec@1 43.995	Prec2@1 81.807	Domain 67.071	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.00019907951355
+clipping gradient: 20.6202409846 with coef 0.96992076935
+Epoch: [30][0/15], lr: 0.00160	Time 4.974 (4.974)	Data 0.000 (0.000)	Loss 0.5871 (0.5871)	Prec@1 75.000 (75.000)	Prec2@1 95.833 (95.833)	Domain 50.000 (50.000)	Domain2 54.167 (54.167)	Wmain: 0.100 	Wmain_2: 0.100	l:0.537
+train_num 0 total_epoch_acc_s 0
+
+Epoch 31 lr_decay: 0.392478225261 disc_w_decay: 0.0974181645193
+Val Epoch: [31]	Time 46.9992139339 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 49.703	Prec2@1 73.127	Domain 56.480	Domain2 72.057	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000310897827148
+Epoch: [31][0/15], lr: 0.00157	Time 4.920 (4.920)	Data 0.000 (0.000)	Loss 0.5632 (0.5632)	Prec@1 75.000 (75.000)	Prec2@1 100.000 (100.000)	Domain 56.250 (56.250)	Domain2 56.250 (56.250)	Wmain: 0.100 	Wmain_2: 0.100	l:0.551
+train_num 0 total_epoch_acc_s 0
+
+Epoch 32 lr_decay: 0.385844666598 disc_w_decay: 0.0951837572909
+Val Epoch: [32]	Time 46.3735449314 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 45.541	Prec2@1 85.850	Domain 40.547	Domain2 64.566	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000154972076416
+Epoch: [32][0/15], lr: 0.00154	Time 4.968 (4.968)	Data 0.000 (0.000)	Loss 0.2934 (0.2934)	Prec@1 91.667 (91.667)	Prec2@1 95.833 (95.833)	Domain 47.917 (47.917)	Domain2 68.750 (68.750)	Wmain: 0.100 	Wmain_2: 0.100	l:0.565
+train_num 0 total_epoch_acc_s 0
+
+Epoch 33 lr_decay: 0.379466954924 disc_w_decay: 0.0930005989819
+Val Epoch: [33]	Time 46.4428830147 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 51.249	Prec2@1 73.484	Domain 49.227	Domain2 74.792	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.0001540184021
+Epoch: [33][0/15], lr: 0.00152	Time 4.909 (4.909)	Data 0.000 (0.000)	Loss 0.3835 (0.3835)	Prec@1 87.500 (87.500)	Prec2@1 100.000 (100.000)	Domain 41.667 (41.667)	Domain2 66.667 (66.667)	Wmain: 0.100 	Wmain_2: 0.100	l:0.578
+clipping gradient: 21.7590873037 with coef 0.91915619993
+clipping gradient: 21.7941363589 with coef 0.917678024521
+train_num 0 total_epoch_acc_s 0
+
+Epoch 34 lr_decay: 0.373329918151 disc_w_decay: 0.0908675141344
+Val Epoch: [34]	Time 46.2686910629 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 45.184	Prec2@1 84.542	Domain 45.303	Domain2 70.868	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.0001540184021
+Epoch: [34][0/15], lr: 0.00149	Time 4.894 (4.894)	Data 0.000 (0.000)	Loss 0.6622 (0.6622)	Prec@1 79.167 (79.167)	Prec2@1 100.000 (100.000)	Domain 52.083 (52.083)	Domain2 58.333 (58.333)	Wmain: 0.100 	Wmain_2: 0.100	l:0.592
+train_num 0 total_epoch_acc_s 0
+
+Epoch 35 lr_decay: 0.367419585202 disc_w_decay: 0.088783354251
+Val Epoch: [35]	Time 46.4163799286 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 45.303	Prec2@1 81.570	Domain 56.243	Domain2 70.868	
+Test Epoch: [35]	Time 212.228518009 	Prec@1 60.166	Prec2@1 82.759	Domain 73.880	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.0001540184021
+Epoch: [35][0/15], lr: 0.00147	Time 4.916 (4.916)	Data 0.000 (0.000)	Loss 0.4542 (0.4542)	Prec@1 79.167 (79.167)	Prec2@1 100.000 (100.000)	Domain 70.833 (70.833)	Domain2 56.250 (56.250)	Wmain: 0.100 	Wmain_2: 0.100	l:0.604
+train_num 0 total_epoch_acc_s 0
+
+Epoch 36 lr_decay: 0.36172306808 disc_w_decay: 0.0867469971765
+Val Epoch: [36]	Time 47.8933398724 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 46.849	Prec2@1 85.018	Domain 61.593	Domain2 72.414	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.00016188621521
+Epoch: [36][0/15], lr: 0.00145	Time 4.962 (4.962)	Data 0.000 (0.000)	Loss 0.4333 (0.4333)	Prec@1 83.333 (83.333)	Prec2@1 100.000 (100.000)	Domain 54.167 (54.167)	Domain2 52.083 (52.083)	Wmain: 0.100 	Wmain_2: 0.100	l:0.617
+clipping gradient: 21.9766216172 with coef 0.910057985636
+train_num 0 total_epoch_acc_s 0
+
+Epoch 37 lr_decay: 0.356228457661 disc_w_decay: 0.084757346494
+Val Epoch: [37]	Time 46.2482099533 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 44.590	Prec2@1 79.548	Domain 52.675	Domain2 66.825	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000167846679688
+Epoch: [37][0/15], lr: 0.00142	Time 4.915 (4.915)	Data 0.000 (0.000)	Loss 0.5372 (0.5372)	Prec@1 87.500 (87.500)	Prec2@1 100.000 (100.000)	Domain 52.083 (52.083)	Domain2 47.917 (47.917)	Wmain: 0.100 	Wmain_2: 0.100	l:0.629
+clipping gradient: 21.265066674 with coef 0.940509630494
+train_num 0 total_epoch_acc_s 0
+
+Epoch 38 lr_decay: 0.350924731396 disc_w_decay: 0.0828133309338
+Val Epoch: [38]	Time 46.3792099953 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 47.087	Prec2@1 85.731	Domain 58.621	Domain2 68.490	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000166177749634
+Epoch: [38][0/15], lr: 0.00140	Time 5.561 (5.561)	Data 0.000 (0.000)	Loss 0.2186 (0.2186)	Prec@1 95.833 (95.833)	Prec2@1 100.000 (100.000)	Domain 70.833 (70.833)	Domain2 64.583 (64.583)	Wmain: 0.100 	Wmain_2: 0.100	l:0.641
+clipping gradient: 20.7209994971 with coef 0.965204405453
+clipping gradient: 26.4781863863 with coef 0.755338742172
+clipping gradient: 26.4703799297 with coef 0.755561501314
+train_num 0 total_epoch_acc_s 0
+
+Epoch 39 lr_decay: 0.345801671329 disc_w_decay: 0.0809139037977
+Val Epoch: [39]	Time 48.382953167 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 44.471	Prec2@1 75.030	Domain 63.615	Domain2 67.420	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.00016188621521
+Epoch: [39][0/15], lr: 0.00138	Time 5.045 (5.045)	Data 0.000 (0.000)	Loss 0.6164 (0.6164)	Prec@1 75.000 (75.000)	Prec2@1 100.000 (100.000)	Domain 50.000 (50.000)	Domain2 70.833 (70.833)	Wmain: 0.100 	Wmain_2: 0.100	l:0.653
+train_num 0 total_epoch_acc_s 0
+
+Epoch 40 lr_decay: 0.340849791129 disc_w_decay: 0.0790580423942
+Val Epoch: [40]	Time 46.9854240417 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 44.114	Prec2@1 84.423	Domain 67.539	Domain2 60.523	
+Test Epoch: [40]	Time 212.892276049 	Prec@1 62.069	Prec2@1 83.234	Domain 74.871	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.0001540184021
+Epoch: [40][0/15], lr: 0.00136	Time 4.894 (4.894)	Data 0.000 (0.000)	Loss 0.4857 (0.4857)	Prec@1 87.500 (87.500)	Prec2@1 100.000 (100.000)	Domain 70.833 (70.833)	Domain2 54.167 (54.167)	Wmain: 0.100 	Wmain_2: 0.100	l:0.664
+clipping gradient: 21.0273629781 with coef 0.951141615849
+clipping gradient: 26.0989616306 with coef 0.766314012147
+clipping gradient: 20.0304509921 with coef 0.998479765028
+train_num 0 total_epoch_acc_s 0
+
+Epoch 41 lr_decay: 0.336060270978 disc_w_decay: 0.0772447474891
+Val Epoch: [41]	Time 47.4343869686 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 49.703	Prec2@1 86.088	Domain 56.361	Domain2 70.987	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.00028395652771
+Epoch: [41][0/15], lr: 0.00134	Time 4.976 (4.976)	Data 0.000 (0.000)	Loss 0.2722 (0.2722)	Prec@1 83.333 (83.333)	Prec2@1 100.000 (100.000)	Domain 60.417 (60.417)	Domain2 64.583 (64.583)	Wmain: 0.100 	Wmain_2: 0.100	l:0.675
+train_num 0 total_epoch_acc_s 0
+
+Epoch 42 lr_decay: 0.331424899338 disc_w_decay: 0.0754730427666
+Val Epoch: [42]	Time 46.5435659885 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 48.751	Prec2@1 82.164	Domain 33.888	Domain2 72.414	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000152826309204
+Epoch: [42][0/15], lr: 0.00133	Time 4.945 (4.945)	Data 0.000 (0.000)	Loss 0.3760 (0.3760)	Prec@1 87.500 (87.500)	Prec2@1 100.000 (100.000)	Domain 64.583 (64.583)	Domain2 66.667 (66.667)	Wmain: 0.100 	Wmain_2: 0.100	l:0.686
+clipping gradient: 20.1855750509 with coef 0.990806551191
+train_num 0 total_epoch_acc_s 0
+
+Epoch 43 lr_decay: 0.326936020781 disc_w_decay: 0.0737419743037
+Val Epoch: [43]	Time 46.6949141026 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 42.212	Prec2@1 78.597	Domain 60.642	Domain2 78.002	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000154972076416
+Epoch: [43][0/15], lr: 0.00131	Time 4.927 (4.927)	Data 0.000 (0.000)	Loss 0.3799 (0.3799)	Prec@1 79.167 (79.167)	Prec2@1 95.833 (95.833)	Domain 62.500 (62.500)	Domain2 64.583 (64.583)	Wmain: 0.100 	Wmain_2: 0.100	l:0.696
+clipping gradient: 20.360240537 with coef 0.982306665959
+train_num 0 total_epoch_acc_s 0
+
+Epoch 44 lr_decay: 0.32258648912 disc_w_decay: 0.0720506100573
+Val Epoch: [44]	Time 46.3978738785 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 38.526	Prec2@1 85.731	Domain 72.771	Domain2 82.759	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000156164169312
+Epoch: [44][0/15], lr: 0.00129	Time 4.905 (4.905)	Data 0.000 (0.000)	Loss 0.1402 (0.1402)	Prec@1 95.833 (95.833)	Prec2@1 95.833 (95.833)	Domain 56.250 (56.250)	Domain2 58.333 (58.333)	Wmain: 0.100 	Wmain_2: 0.100	l:0.706
+clipping gradient: 20.2577870254 with coef 0.987274669979
+clipping gradient: 21.9842403678 with coef 0.9097426004
+train_num 0 total_epoch_acc_s 0
+
+Epoch 45 lr_decay: 0.318369625258 disc_w_decay: 0.0703980393615
+Val Epoch: [45]	Time 46.9081799984 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 48.514	Prec2@1 77.289	Domain 69.084	Domain2 64.685	
+Test Epoch: [45]	Time 211.48159194 	Prec@1 68.609	Prec2@1 74.911	Domain 68.347	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000150918960571
+Epoch: [45][0/15], lr: 0.00127	Time 4.907 (4.907)	Data 0.000 (0.000)	Loss 0.6689 (0.6689)	Prec@1 75.000 (75.000)	Prec2@1 95.833 (95.833)	Domain 79.167 (79.167)	Domain2 62.500 (62.500)	Wmain: 0.100 	Wmain_2: 0.100	l:0.716
+clipping gradient: 20.9372152798 with coef 0.95523687046
+train_num 0 total_epoch_acc_s 0
+
+Epoch 46 lr_decay: 0.314279179173 disc_w_decay: 0.0687833724379
+Val Epoch: [46]	Time 46.6254770756 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 45.660	Prec2@1 79.429	Domain 52.319	Domain2 65.755	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000360012054443
+Epoch: [46][0/15], lr: 0.00126	Time 4.920 (4.920)	Data 0.000 (0.000)	Loss 0.3729 (0.3729)	Prec@1 87.500 (87.500)	Prec2@1 91.667 (91.667)	Domain 60.417 (60.417)	Domain2 58.333 (58.333)	Wmain: 0.100 	Wmain_2: 0.100	l:0.726
+clipping gradient: 20.1346723757 with coef 0.993311419566
+train_num 0 total_epoch_acc_s 0
+
+Epoch 47 lr_decay: 0.310309295593 disc_w_decay: 0.067205739916
+Val Epoch: [47]	Time 46.6248550415 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 51.605	Prec2@1 85.969	Domain 63.020	Domain2 76.219	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000155925750732
+Epoch: [47][0/15], lr: 0.00124	Time 5.038 (5.038)	Data 0.000 (0.000)	Loss 0.4706 (0.4706)	Prec@1 79.167 (79.167)	Prec2@1 95.833 (95.833)	Domain 54.167 (54.167)	Domain2 60.417 (60.417)	Wmain: 0.100 	Wmain_2: 0.100	l:0.735
+clipping gradient: 20.7281175045 with coef 0.964872955571
+clipping gradient: 23.7596224507 with coef 0.841764217489
+clipping gradient: 22.6008439199 with coef 0.884922707794
+train_num 0 total_epoch_acc_s 0
+
+Epoch 48 lr_decay: 0.306454482938 disc_w_decay: 0.0656642923657
+Val Epoch: [48]	Time 47.0777418613 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 51.011	Prec2@1 82.878	Domain 47.206	Domain2 66.468	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.0001540184021
+Epoch: [48][0/15], lr: 0.00123	Time 5.690 (5.690)	Data 0.000 (0.000)	Loss 0.4282 (0.4282)	Prec@1 83.333 (83.333)	Prec2@1 100.000 (100.000)	Domain 54.167 (54.167)	Domain2 60.417 (60.417)	Wmain: 0.100 	Wmain_2: 0.100	l:0.744
+train_num 0 total_epoch_acc_s 0
+
+Epoch 49 lr_decay: 0.30270958517 disc_w_decay: 0.0641581998394
+Val Epoch: [49]	Time 46.5238289833 	c_rgb 1.000, d_rgb 1.000, fd_rgb 1.000	Prec@1 49.108	Prec2@1 87.396	Domain 48.395	Domain2 72.295	
+Select error/total selected = 0/0
+Select2 error/total selected2 = 0/0
+data batch prep_time: 0.000164985656738
+Epoch: [49][0/15], lr: 0.00121	Time 4.973 (4.973)	Data 0.000 (0.000)	Loss 0.3768 (0.3768)	Prec@1 87.500 (87.500)	Prec2@1 100.000 (100.000)	Domain 54.167 (54.167)	Domain2 56.250 (56.250)	Wmain: 0.100 	Wmain_2: 0.100	l:0.753
+train_num 0 total_epoch_acc_s 0
+
+Epoch 50 lr_decay: 0.299069756244 disc_w_decay: 0.0626866514255
+Val Epoch: [50]	Time 48.5527729988 	c_rgb 1.064, d_rgb 1.016, fd_rgb 0.981	Prec@1 48.751	Prec2@1 80.975	Domain 73.365	Domain2 65.993	
+Test Epoch: [50]	Time 209.989590883 	Prec@1 51.843	Prec2@1 79.786	Domain 64.209	
+sort pseudo time: 0.000329971313477
+sort pseudo2 time: 0.000625133514404
+sort pseudo_co time: 0.000916004180908
+current_test_source_acc 84.9999969482 avg_test_source_acc 0 prev_epoch_acc_s 83.3333300273 double_desc False
+current_test_source_acc2 99.4444437663 avg_test_source_acc2 0 prev_epoch_acc_s2 98.8888875326 double_desc2 False
+threshold_count: 1 pseudo_ratio:0.2040
+threshold2_count: 1 pseudo2_ratio:0.2040
+Select error/total selected = 58/267
+Select2 error/total selected2 = 27/235
+data batch prep_time: 11.3619370461
+Epoch: [50][0/22], lr: 0.00120	Time 5.184 (5.184)	Data 0.000 (0.000)	Loss 0.2922 (0.2922)	Prec@1 91.667 (91.667)	Prec2@1 100.000 (100.000)	Domain 64.583 (64.583)	Domain2 64.583 (64.583)	Wmain: 0.100 	Wmain_2: 0.100	l:0.762
+clipping gradient: 23.7505922872 with coef 0.842084262917
+clipping gradient: 21.1633723773 with coef 0.945028970028
+clipping gradient: 20.6904861832 with coef 0.966627841555
+clipping gradient: 23.0261294727 with coef 0.868578456648
+clipping gradient: 31.1582909431 with coef 0.641883729647
+clipping gradient: 28.0994489978 with coef 0.711757728828
+Epoch: [50][20/22], lr: 0.00120	Time 4.979 (5.020)	Data 0.000 (0.000)	Loss 0.3797 (0.3910)	Prec@1 79.167 (88.095)	Prec2@1 100.000 (97.222)	Domain 52.083 (61.508)	Domain2 62.500 (59.821)	Wmain: 0.100 	Wmain_2: 0.100	l:0.762
+train_num 1 total_epoch_acc_s 88.4469666915
+
+Epoch 51 lr_decay: 0.295530436869 disc_w_decay: 0.0612488548117
+Val Epoch: [51]	Time 49.3362839222 	c_rgb 1.082, d_rgb 1.034, fd_rgb 0.959	Prec@1 46.968	Prec2@1 75.149	Domain 56.837	Domain2 68.728	
+sort pseudo time: 0.000508069992065
+sort pseudo2 time: 0.000971078872681
+sort pseudo_co time: 0.00145387649536
+current_test_source_acc 88.4469666915 avg_test_source_acc 88.4469666915 prev_epoch_acc_s 84.9999969482 double_desc False
+current_test_source_acc2 97.3484833457 avg_test_source_acc2 97.3484833457 prev_epoch_acc_s2 99.4444437663 double_desc2 False
+threshold_count: 2 pseudo_ratio:0.2080
+threshold2_count: 2 pseudo2_ratio:0.2080
+Select error/total selected = 68/279
+Select2 error/total selected2 = 38/248
+data batch prep_time: 11.6303648949
+Epoch: [51][0/22], lr: 0.00118	Time 4.949 (4.949)	Data 0.000 (0.000)	Loss 0.3806 (0.3806)	Prec@1 91.667 (91.667)	Prec2@1 100.000 (100.000)	Domain 77.083 (77.083)	Domain2 60.417 (60.417)	Wmain: 0.100 	Wmain_2: 0.100	l:0.770
+clipping gradient: 25.5659461091 with coef 0.782290626548
+Epoch: [51][20/22], lr: 0.00118	Time 4.912 (5.007)	Data 0.000 (0.000)	Loss 0.1422 (0.3288)	Prec@1 91.667 (88.889)	Prec2@1 95.833 (97.817)	Domain 45.833 (58.829)	Domain2 64.583 (59.425)	Wmain: 0.100 	Wmain_2: 0.100	l:0.770
+train_num 2 total_epoch_acc_s 177.462115895
+
+Epoch 52 lr_decay: 0.292087333349 disc_w_decay: 0.0598440358583
+Val Epoch: [52]	Time 48.8085300922 	c_rgb 1.028, d_rgb 1.028, fd_rgb 0.957	Prec@1 50.654	Prec2@1 82.045	Domain 65.279	Domain2 79.548	
+sort pseudo time: 0.000325202941895
+sort pseudo2 time: 0.000613212585449
+sort pseudo_co time: 0.000900030136108
+current_test_source_acc 89.0151492032 avg_test_source_acc 88.7310579473 prev_epoch_acc_s 88.4469666915 double_desc False
+current_test_source_acc2 97.7272713401 avg_test_source_acc2 97.5378773429 prev_epoch_acc_s2 97.3484833457 double_desc2 False
+threshold_count: 3 pseudo_ratio:0.2120
+threshold2_count: 3 pseudo2_ratio:0.2120
+Select error/total selected = 36/259
+Select2 error/total selected2 = 51/286
+data batch prep_time: 11.4692630768
+Epoch: [52][0/22], lr: 0.00117	Time 4.947 (4.947)	Data 0.000 (0.000)	Loss 0.1813 (0.1813)	Prec@1 95.833 (95.833)	Prec2@1 100.000 (100.000)	Domain 54.167 (54.167)	Domain2 60.417 (60.417)	Wmain: 0.100 	Wmain_2: 0.100	l:0.778
+clipping gradient: 20.0564799076 with coef 0.997183957114
+Epoch: [52][20/22], lr: 0.00117	Time 5.158 (5.027)	Data 0.000 (0.000)	Loss 0.2745 (0.2186)	Prec@1 87.500 (92.262)	Prec2@1 100.000 (98.214)	Domain 62.500 (61.607)	Domain2 68.750 (59.821)	Wmain: 0.100 	Wmain_2: 0.100	l:0.778
+train_num 3 total_epoch_acc_s 269.886355313
+
+Epoch 53 lr_decay: 0.288736398289 disc_w_decay: 0.0584714381815
+Val Epoch: [53]	Time 47.9824531078 	c_rgb 0.998, d_rgb 0.997, fd_rgb 0.985	Prec@1 54.697	Prec2@1 79.429	Domain 70.036	Domain2 60.761	
+sort pseudo time: 0.000319004058838
+sort pseudo2 time: 0.000608205795288
+sort pseudo_co time: 0.000899076461792
+current_test_source_acc 92.4242394187 avg_test_source_acc 89.9621184378 prev_epoch_acc_s 89.0151492032 double_desc False
+current_test_source_acc2 98.2954528115 avg_test_source_acc2 97.7904024991 prev_epoch_acc_s2 97.7272713401 double_desc2 False
+threshold_count: 4 pseudo_ratio:0.2160
+threshold2_count: 4 pseudo2_ratio:0.2160
+Select error/total selected = 34/258
+Select2 error/total selected2 = 42/259
+data batch prep_time: 11.0678730011
+Epoch: [53][0/24], lr: 0.00115	Time 5.069 (5.069)	Data 0.000 (0.000)	Loss 0.0600 (0.0600)	Prec@1 100.000 (100.000)	Prec2@1 100.000 (100.000)	Domain 60.417 (60.417)	Domain2 64.583 (64.583)	Wmain: 0.100 	Wmain_2: 0.100	l:0.786
+clipping gradient: 34.7177350886 with coef 0.576074445783
+clipping gradient: 23.6528110638 with coef 0.845565457147
+clipping gradient: 20.2754332369 with coef 0.98641542039
+Epoch: [53][20/24], lr: 0.00115	Time 4.951 (5.045)	Data 0.000 (0.000)	Loss 0.1782 (0.2406)	Prec@1 91.667 (91.865)	Prec2@1 100.000 (98.611)	Domain 64.583 (61.310)	Domain2 66.667 (60.417)	Wmain: 0.100 	Wmain_2: 0.100	l:0.786
+clipping gradient: 30.2505952521 with coef 0.661144014962
+train_num 4 total_epoch_acc_s 361.553019119
+
+Epoch 54 lr_decay: 0.285473812963 disc_w_decay: 0.0571303227461
+Val Epoch: [54]	Time 48.3176660538 	c_rgb 1.020, d_rgb 0.967, fd_rgb 1.017	Prec@1 52.913	Prec2@1 78.240	Domain 68.371	Domain2 61.593	
+sort pseudo time: 0.000322103500366
+sort pseudo2 time: 0.000610113143921
+sort pseudo_co time: 0.000903129577637
+current_test_source_acc 91.6666638056 avg_test_source_acc 90.3882547798 prev_epoch_acc_s 92.4242394187 double_desc False
+current_test_source_acc2 98.6111097336 avg_test_source_acc2 97.9955793077 prev_epoch_acc_s2 98.2954528115 double_desc2 False
+threshold_count: 5 pseudo_ratio:0.2200
+threshold2_count: 5 pseudo2_ratio:0.2200
+Select error/total selected = 28/253
+Select2 error/total selected2 = 32/263
+data batch prep_time: 11.899668932
+Epoch: [54][0/24], lr: 0.00114	Time 4.984 (4.984)	Data 0.000 (0.000)	Loss 0.3806 (0.3806)	Prec@1 91.667 (91.667)	Prec2@1 100.000 (100.000)	Domain 43.750 (43.750)	Domain2 56.250 (56.250)	Wmain: 0.100 	Wmain_2: 0.100	l:0.793
+clipping gradient: 37.9989917134 with coef 0.526329755033
+clipping gradient: 25.2108301919 with coef 0.793309853256
+clipping gradient: 23.8380547535 with coef 0.838994633027
+clipping gradient: 20.44145662 with coef 0.978403857016
+clipping gradient: 22.8558502507 with coef 0.875049485389
+Epoch: [54][20/24], lr: 0.00114	Time 4.967 (5.012)	Data 0.000 (0.000)	Loss 0.6420 (0.2709)	Prec@1 87.500 (92.262)	Prec2@1 100.000 (98.810)	Domain 72.917 (63.889)	Domain2 62.500 (58.730)	Wmain: 0.100 	Wmain_2: 0.100	l:0.793
+train_num 5 total_epoch_acc_s 452.872461232
+
+Epoch 55 lr_decay: 0.282295971197 disc_w_decay: 0.0558199674676
+Val Epoch: [55]	Time 48.8778522015 	c_rgb 1.017, d_rgb 0.953, fd_rgb 1.037	Prec@1 52.438	Prec2@1 83.948	Domain 65.161	Domain2 58.383	
+Test Epoch: [55]	Time 210.389868975 	Prec@1 53.151	Prec2@1 83.948	Domain 53.310	
+sort pseudo time: 0.000316858291626
+sort pseudo2 time: 0.000605821609497
+sort pseudo_co time: 0.000893831253052
+current_test_source_acc 91.3194421132 avg_test_source_acc 90.5744922465 prev_epoch_acc_s 91.6666638056 double_desc False
+current_test_source_acc2 98.7847210566 avg_test_source_acc2 98.1534076575 prev_epoch_acc_s2 98.6111097336 double_desc2 False
+threshold_count: 6 pseudo_ratio:0.2240
+threshold2_count: 6 pseudo2_ratio:0.2240
+Select error/total selected = 43/276
+Select2 error/total selected2 = 30/261
+data batch prep_time: 11.6613271236
+Epoch: [55][0/24], lr: 0.00113	Time 4.964 (4.964)	Data 0.000 (0.000)	Loss 0.3870 (0.3870)	Prec@1 79.167 (79.167)	Prec2@1 100.000 (100.000)	Domain 68.750 (68.750)	Domain2 58.333 (58.333)	Wmain: 0.100 	Wmain_2: 0.100	l:0.800
+clipping gradient: 46.8341242921 with coef 0.427039051169
+clipping gradient: 23.5165645959 with coef 0.850464357513
+clipping gradient: 47.0511542315 with coef 0.425069274637
+Epoch: [55][20/24], lr: 0.00113	Time 5.011 (4.962)	Data 0.000 (0.000)	Loss 0.0240 (0.2519)	Prec@1 100.000 (89.881)	Prec2@1 95.833 (97.421)	Domain 58.333 (60.714)	Domain2 62.500 (62.302)	Wmain: 0.100 	Wmain_2: 0.100	l:0.800
+train_num 6 total_epoch_acc_s 543.323847684
+
+Epoch 56 lr_decay: 0.279199464599 disc_w_decay: 0.0545396668233
+Val Epoch: [56]	Time 48.4469261169 	c_rgb 1.024, d_rgb 0.934, fd_rgb 1.069	Prec@1 50.535	Prec2@1 81.926	Domain 66.468	Domain2 66.944	
+sort pseudo time: 0.000328779220581
+sort pseudo2 time: 0.000614881515503
+sort pseudo_co time: 0.00091290473938
+current_test_source_acc 90.4513864517 avg_test_source_acc 90.553974614 prev_epoch_acc_s 91.3194421132 double_desc True
+current_test_source_acc2 97.5694417953 avg_test_source_acc2 98.0560800138 prev_epoch_acc_s2 98.7847210566 double_desc2 True
+threshold_count: 6 pseudo_ratio:0.2240
+threshold2_count: 6 pseudo2_ratio:0.2240
+Select error/total selected = 41/265
+Select2 error/total selected2 = 31/253
+data batch prep_time: 11.4365420341
+Epoch: [56][0/24], lr: 0.00112	Time 4.992 (4.992)	Data 0.000 (0.000)	Loss 0.6369 (0.6369)	Prec@1 75.000 (75.000)	Prec2@1 100.000 (100.000)	Domain 52.083 (52.083)	Domain2 68.750 (68.750)	Wmain: 0.100 	Wmain_2: 0.100	l:0.808
+Epoch: [56][20/24], lr: 0.00112	Time 4.950 (5.000)	Data 0.000 (0.000)	Loss 0.3830 (0.2366)	Prec@1 83.333 (92.460)	Prec2@1 95.833 (99.206)	Domain 72.917 (60.218)	Domain2 62.500 (62.401)	Wmain: 0.100 	Wmain_2: 0.100	l:0.808
+train_num 7 total_epoch_acc_s 635.511345141
+
+Epoch 57 lr_decay: 0.27618106902 disc_w_decay: 0.0532887314727
+Val Epoch: [57]	Time 47.9258859158 	c_rgb 1.021, d_rgb 0.909, fd_rgb 1.108	Prec@1 48.395	Prec2@1 85.018	Domain 61.712	Domain2 63.377	
+sort pseudo time: 0.000339031219482
+sort pseudo2 time: 0.000636100769043
+sort pseudo_co time: 0.000940084457397
+current_test_source_acc 92.1874974569 avg_test_source_acc 90.7873350201 prev_epoch_acc_s 90.4513864517 double_desc False
+current_test_source_acc2 99.1319433848 avg_test_source_acc2 98.2097747811 prev_epoch_acc_s2 97.5694417953 double_desc2 False
+threshold_count: 7 pseudo_ratio:0.2280
+threshold2_count: 7 pseudo2_ratio:0.2280
+Select error/total selected = 36/264
+Select2 error/total selected2 = 36/289
+data batch prep_time: 11.5601420403
+Epoch: [57][0/24], lr: 0.00110	Time 4.955 (4.955)	Data 0.000 (0.000)	Loss 0.3148 (0.3148)	Prec@1 91.667 (91.667)	Prec2@1 100.000 (100.000)	Domain 64.583 (64.583)	Domain2 62.500 (62.500)	Wmain: 0.100 	Wmain_2: 0.100	l:0.814
+Epoch: [57][20/24], lr: 0.00110	Time 4.967 (4.993)	Data 0.000 (0.000)	Loss 0.2199 (0.2703)	Prec@1 91.667 (92.857)	Prec2@1 95.833 (99.405)	Domain 64.583 (62.004)	Domain2 66.667 (61.706)	Wmain: 0.100 	Wmain_2: 0.100	l:0.814
+train_num 8 total_epoch_acc_s 728.219676249
+
+Epoch 58 lr_decay: 0.273237732114 disc_w_decay: 0.0520664878862
+Val Epoch: [58]	Time 48.6327750683 	c_rgb 1.054, d_rgb 0.903, fd_rgb 1.138	Prec@1 52.675	Prec2@1 77.765	Domain 52.913	Domain2 60.285	
+sort pseudo time: 0.00036096572876
+sort pseudo2 time: 0.000670909881592
+sort pseudo_co time: 0.000977993011475
+current_test_source_acc 92.7083311081 avg_test_source_acc 91.0274595311 prev_epoch_acc_s 92.1874974569 double_desc False
+current_test_source_acc2 99.4791663488 avg_test_source_acc2 98.3684487271 prev_epoch_acc_s2 99.1319433848 double_desc2 False
+threshold_count: 8 pseudo_ratio:0.2320
+threshold2_count: 8 pseudo2_ratio:0.2320
+Select error/total selected = 39/283
+Select2 error/total selected2 = 29/264
+data batch prep_time: 11.9658238888
+Epoch: [58][0/24], lr: 0.00109	Time 4.937 (4.937)	Data 0.000 (0.000)	Loss 0.1739 (0.1739)	Prec@1 91.667 (91.667)	Prec2@1 95.833 (95.833)	Domain 43.750 (43.750)	Domain2 66.667 (66.667)	Wmain: 0.100 	Wmain_2: 0.100	l:0.821
+clipping gradient: 25.0337385542 with coef 0.798921821313
+clipping gradient: 24.0007489828 with coef 0.833307327796
+Epoch: [58][20/24], lr: 0.00109	Time 4.943 (4.982)	Data 0.000 (0.000)	Loss 0.7080 (0.2681)	Prec@1 75.000 (91.667)	Prec2@1 100.000 (99.405)	Domain 60.417 (58.929)	Domain2 66.667 (60.020)	Wmain: 0.100 	Wmain_2: 0.100	l:0.821
+train_num 9 total_epoch_acc_s 819.88634069
+
+Epoch 59 lr_decay: 0.270366561908 disc_w_decay: 0.0508722779823
+Val Epoch: [59]	Time 49.6111340523 	c_rgb 1.048, d_rgb 0.904, fd_rgb 1.165	Prec@1 56.124	Prec2@1 81.688	Domain 48.395	Domain2 48.989	
+sort pseudo time: 0.000326156616211
+sort pseudo2 time: 0.000617027282715
+sort pseudo_co time: 0.000920057296753
+current_test_source_acc 91.6666644414 avg_test_source_acc 91.0984822989 prev_epoch_acc_s 92.7083311081 double_desc False
+current_test_source_acc2 99.1319437027 avg_test_source_acc2 98.4532815021 prev_epoch_acc_s2 99.4791663488 double_desc2 False
+threshold_count: 9 pseudo_ratio:0.2360
+threshold2_count: 9 pseudo2_ratio:0.2360
+Select error/total selected = 53/298
+Select2 error/total selected2 = 16/237
+data batch prep_time: 12.1874129772
+Epoch: [59][0/24], lr: 0.00108	Time 4.943 (4.943)	Data 0.000 (0.000)	Loss 0.1926 (0.1926)	Prec@1 91.667 (91.667)	Prec2@1 100.000 (100.000)	Domain 50.000 (50.000)	Domain2 60.417 (60.417)	Wmain: 0.100 	Wmain_2: 0.100	l:0.827
+clipping gradient: 20.1743519822 with coef 0.991357740642
+clipping gradient: 43.6539683799 with coef 0.458148496969
+clipping gradient: 31.5026435905 with coef 0.634867354625
+Epoch: [59][20/24], lr: 0.00108	Time 4.983 (4.991)	Data 0.000 (0.000)	Loss 0.3423 (0.2554)	Prec@1 87.500 (91.667)	Prec2@1 100.000 (99.008)	Domain 68.750 (59.921)	Domain2 62.500 (59.623)	Wmain: 0.100 	Wmain_2: 0.100	l:0.827
+train_num 10 total_epoch_acc_s 911.726615501
+
+Epoch 60 lr_decay: 0.267564816275 disc_w_decay: 0.0497054587735
+Val Epoch: [60]	Time 49.6025240421 	c_rgb 1.016, d_rgb 0.876, fd_rgb 1.220	Prec@1 51.249	Prec2@1 83.353	Domain 61.118	Domain2 72.771	
+Test Epoch: [60]	Time 210.2472651 	Prec@1 55.767	Prec2@1 83.234	Domain 48.799	
+sort pseudo time: 0.000303030014038
+sort pseudo2 time: 0.000569105148315
+sort pseudo_co time: 0.00084400177002
+current_test_source_acc 91.8402748108 avg_test_source_acc 91.1726615501 prev_epoch_acc_s 91.6666644414 double_desc False
+current_test_source_acc2 98.7847210566 avg_test_source_acc2 98.4864254576 prev_epoch_acc_s2 99.1319437027 double_desc2 False
+threshold_count: 10 pseudo_ratio:0.2400
+threshold2_count: 10 pseudo2_ratio:0.2400
+Select error/total selected = 46/302
+Select2 error/total selected2 = 60/336
+data batch prep_time: 13.3911268711
+Epoch: [60][0/24], lr: 0.00107	Time 4.975 (4.975)	Data 0.000 (0.000)	Loss 0.2679 (0.2679)	Prec@1 91.667 (91.667)	Prec2@1 100.000 (100.000)	Domain 54.167 (54.167)	Domain2 56.250 (56.250)	Wmain: 0.100 	Wmain_2: 0.100	l:0.834
+clipping gradient: 24.561517238 with coef 0.814281943833
+clipping gradient: 28.4176399293 with coef 0.703788212172
+clipping gradient: 24.1312621184 with coef 0.828800412588
+Epoch: [60][20/24], lr: 0.00107	Time 5.032 (4.997)	Data 0.000 (0.000)	Loss 0.7172 (0.3133)	Prec@1 79.167 (89.087)	Prec2@1 100.000 (99.603)	Domain 60.417 (59.425)	Domain2 60.417 (60.516)	Wmain: 0.100 	Wmain_2: 0.100	l:0.834
+clipping gradient: 22.1038998763 with coef 0.904817706917
+train_num 11 total_epoch_acc_s 1000.789112
+
+Epoch 61 lr_decay: 0.264829893234 disc_w_decay: 0.04856540202
+Val Epoch: [61]	Time 49.1550319195 	c_rgb 1.046, d_rgb 0.875, fd_rgb 1.253	Prec@1 48.989	Prec2@1 82.640	Domain 69.679	Domain2 56.718	
+sort pseudo time: 0.000332832336426
+sort pseudo2 time: 0.000617980957031
+sort pseudo_co time: 0.000916957855225
+current_test_source_acc 89.0624965032 avg_test_source_acc 90.980828364 prev_epoch_acc_s 91.8402748108 double_desc True
+current_test_source_acc2 99.4791660309 avg_test_source_acc2 98.5766746006 prev_epoch_acc_s2 98.7847210566 double_desc2 False
+threshold_count: 10 pseudo_ratio:0.2400
+threshold2_count: 11 pseudo2_ratio:0.2440
+Select error/total selected = 39/287
+Select2 error/total selected2 = 33/273
+data batch prep_time: 12.1953830719
+Epoch: [61][0/24], lr: 0.00106	Time 5.000 (5.000)	Data 0.000 (0.000)	Loss 0.0357 (0.0357)	Prec@1 100.000 (100.000)	Prec2@1 100.000 (100.000)	Domain 64.583 (64.583)	Domain2 64.583 (64.583)	Wmain: 0.100 	Wmain_2: 0.100	l:0.840
+clipping gradient: 31.8153103603 with coef 0.628628159635
+Epoch: [61][20/24], lr: 0.00106	Time 5.105 (5.050)	Data 0.000 (0.000)	Loss 0.0622 (0.2365)	Prec@1 95.833 (92.659)	Prec2@1 100.000 (99.405)	Domain 70.833 (60.119)	Domain2 64.583 (60.813)	Wmain: 0.100 	Wmain_2: 0.100	l:0.840
+clipping gradient: 23.219657011 with coef 0.861339165798
+train_num 12 total_epoch_acc_s 1092.80299814
+
+Epoch 62 lr_decay: 0.262159321998 disc_w_decay: 0.0474514938915
+Val Epoch: [62]	Time 48.5563910007 	c_rgb 1.030, d_rgb 0.851, fd_rgb 1.312	Prec@1 51.011	Prec2@1 87.158	Domain 74.911	Domain2 56.718	
+sort pseudo time: 0.000312089920044
+sort pseudo2 time: 0.000601053237915
+sort pseudo_co time: 0.000885009765625
+current_test_source_acc 92.0138861338 avg_test_source_acc 91.0669165115 prev_epoch_acc_s 89.0624965032 double_desc False
+current_test_source_acc2 99.3055547078 avg_test_source_acc2 98.6374146095 prev_epoch_acc_s2 99.4791660309 double_desc2 False
+threshold_count: 11 pseudo_ratio:0.2440
+threshold2_count: 12 pseudo2_ratio:0.2480
+Select error/total selected = 41/291
+Select2 error/total selected2 = 33/294
+data batch prep_time: 12.5321288109
+Epoch: [62][0/24], lr: 0.00105	Time 4.903 (4.903)	Data 0.000 (0.000)	Loss 0.0438 (0.0438)	Prec@1 100.000 (100.000)	Prec2@1 100.000 (100.000)	Domain 62.500 (62.500)	Domain2 56.250 (56.250)	Wmain: 0.100 	Wmain_2: 0.100	l:0.845
+clipping gradient: 25.642896752 with coef 0.779943084957
+clipping gradient: 22.1534684538 with coef 0.902793169461
+Epoch: [62][20/24], lr: 0.00105	Time 5.015 (5.012)	Data 0.000 (0.000)	Loss 0.2463 (0.2135)	Prec@1 87.500 (92.063)	Prec2@1 95.833 (99.206)	Domain 68.750 (61.111)	Domain2 64.583 (56.845)	Wmain: 0.100 	Wmain_2: 0.100	l:0.845
+train_num 13 total_epoch_acc_s 1185.33771729
+
+Epoch 63 lr_decay: 0.259550754707 disc_w_decay: 0.0463631346366
+Val Epoch: [63]	Time 47.4966509342 	c_rgb 1.027, d_rgb 0.844, fd_rgb 1.355	Prec@1 56.124	Prec2@1 82.164	Domain 53.983	Domain2 50.297	
+sort pseudo time: 0.000322103500366
+sort pseudo2 time: 0.000596046447754
+sort pseudo_co time: 0.000885009765625
+current_test_source_acc 92.5347191493 avg_test_source_acc 91.1798244067 prev_epoch_acc_s 92.0138861338 double_desc False
+current_test_source_acc2 99.1319433848 avg_test_source_acc2 98.6754552846 prev_epoch_acc_s2 99.3055547078 double_desc2 False
+threshold_count: 12 pseudo_ratio:0.2480
+threshold2_count: 13 pseudo2_ratio:0.2520
+Select error/total selected = 64/322
+Select2 error/total selected2 = 27/265
+data batch prep_time: 13.2239329815
+Epoch: [63][0/24], lr: 0.00104	Time 5.014 (5.014)	Data 0.000 (0.000)	Loss 0.2657 (0.2657)	Prec@1 91.667 (91.667)	Prec2@1 100.000 (100.000)	Domain 68.750 (68.750)	Domain2 56.250 (56.250)	Wmain: 0.100 	Wmain_2: 0.100	l:0.851
+clipping gradient: 24.2343349326 with coef 0.825275381217
+Epoch: [63][20/24], lr: 0.00104	Time 5.165 (5.013)	Data 0.000 (0.000)	Loss 0.1859 (0.2107)	Prec@1 95.833 (93.056)	Prec2@1 100.000 (98.810)	Domain 56.250 (60.714)	Domain2 58.333 (58.532)	Wmain: 0.100 	Wmain_2: 0.100	l:0.851
+train_num 14 total_epoch_acc_s 1278.7404921
+
+Epoch 64 lr_decay: 0.257001958783 disc_w_decay: 0.04529973826
+Val Epoch: [64]	Time 48.6271748543 	c_rgb 1.006, d_rgb 0.830, fd_rgb 1.409	Prec@1 57.432	Prec2@1 81.213	Domain 52.200	Domain2 72.414	
+sort pseudo time: 0.000343084335327
+sort pseudo2 time: 0.000667095184326
+sort pseudo_co time: 0.000977039337158
+current_test_source_acc 93.4027748108 avg_test_source_acc 91.3386065784 prev_epoch_acc_s 92.5347191493 double_desc False
+current_test_source_acc2 98.7847207387 avg_test_source_acc2 98.6832599599 prev_epoch_acc_s2 99.1319433848 double_desc2 False
+threshold_count: 13 pseudo_ratio:0.2520
+threshold2_count: 14 pseudo2_ratio:0.2560
+Select error/total selected = 59/330
+Select2 error/total selected2 = 68/351
+data batch prep_time: 14.4378738403
+Epoch: [64][0/24], lr: 0.00103	Time 4.919 (4.919)	Data 0.000 (0.000)	Loss 0.3206 (0.3206)	Prec@1 91.667 (91.667)	Prec2@1 100.000 (100.000)	Domain 62.500 (62.500)	Domain2 56.250 (56.250)	Wmain: 0.100 	Wmain_2: 0.100	l:0.856
+Epoch: [64][20/24], lr: 0.00103	Time 5.045 (4.999)	Data 0.000 (0.000)	Loss 0.1735 (0.2165)	Prec@1 95.833 (92.460)	Prec2@1 100.000 (99.603)	Domain 66.667 (60.913)	Domain2 60.417 (60.913)	Wmain: 0.100 	Wmain_2: 0.100	l:0.856
+train_num 15 total_epoch_acc_s 1370.58076691
+
+Epoch 65 lr_decay: 0.254510809851 disc_w_decay: 0.044260732207
+Val Epoch: [65]	Time 49.7962961197 	c_rgb 1.034, d_rgb 0.822, fd_rgb 1.462	Prec@1 54.459	Prec2@1 73.008	Domain 48.157	Domain2 59.929	
+Test Epoch: [65]	Time 210.442466021 	Prec@1 59.215	Prec2@1 74.673	Domain 47.087	
+sort pseudo time: 0.000309944152832
+sort pseudo2 time: 0.00058388710022
+sort pseudo_co time: 0.000871896743774
+current_test_source_acc 91.8402748108 avg_test_source_acc 91.3720511273 prev_epoch_acc_s 93.4027748108 double_desc False
+current_test_source_acc2 99.6527773539 avg_test_source_acc2 98.7478944528 prev_epoch_acc_s2 98.7847207387 double_desc2 False
+threshold_count: 14 pseudo_ratio:0.2560
+threshold2_count: 15 pseudo2_ratio:0.2600
+Select error/total selected = 71/327
+Select2 error/total selected2 = 71/316
+data batch prep_time: 13.9767358303
+Epoch: [65][0/24], lr: 0.00102	Time 4.992 (4.992)	Data 0.000 (0.000)	Loss 0.2256 (0.2256)	Prec@1 91.667 (91.667)	Prec2@1 95.833 (95.833)	Domain 60.417 (60.417)	Domain2 68.750 (68.750)	Wmain: 0.100 	Wmain_2: 0.100	l:0.862
+clipping gradient: 35.581477366 with coef 0.562090207617
+clipping gradient: 27.9985910652 with coef 0.714321658309
+clipping gradient: 30.0254918474 with coef 0.666100662119
+clipping gradient: 21.5125111524 with coef 0.929691557544
+Epoch: [65][20/24], lr: 0.00102	Time 5.012 (5.000)	Data 0.000 (0.000)	Loss 0.2222 (0.2681)	Prec@1 91.667 (90.873)	Prec2@1 100.000 (98.413)	Domain 64.583 (60.119)	Domain2 64.583 (59.921)	Wmain: 0.100 	Wmain_2: 0.100	l:0.862
+clipping gradient: 20.4896449933 with coef 0.976102807371
+train_num 16 total_epoch_acc_s 1461.55298606
+
+Epoch 66 lr_decay: 0.252075285183 disc_w_decay: 0.043245557055
+Val Epoch: [66]	Time 48.2422819138 	c_rgb 1.056, d_rgb 0.822, fd_rgb 1.500	Prec@1 55.648	Prec2@1 86.088	Domain 50.535	Domain2 57.669	
+sort pseudo time: 0.000361204147339
+sort pseudo2 time: 0.000670194625854
+sort pseudo_co time: 0.00098705291748
+current_test_source_acc 90.9722191493 avg_test_source_acc 91.3470616286 prev_epoch_acc_s 91.8402748108 double_desc True
+current_test_source_acc2 98.4374990463 avg_test_source_acc2 98.7284947399 prev_epoch_acc_s2 99.6527773539 double_desc2 True
+threshold_count: 14 pseudo_ratio:0.2560
+threshold2_count: 15 pseudo2_ratio:0.2600
+Select error/total selected = 57/316
+Select2 error/total selected2 = 21/271
+data batch prep_time: 13.1344051361
+Epoch: [66][0/24], lr: 0.00101	Time 4.949 (4.949)	Data 0.000 (0.000)	Loss 0.1155 (0.1155)	Prec@1 95.833 (95.833)	Prec2@1 100.000 (100.000)	Domain 66.667 (66.667)	Domain2 54.167 (54.167)	Wmain: 0.100 	Wmain_2: 0.100	l:0.867
+Epoch: [66][20/24], lr: 0.00101	Time 5.005 (4.976)	Data 0.000 (0.000)	Loss 0.2364 (0.3081)	Prec@1 91.667 (89.881)	Prec2@1 95.833 (98.810)	Domain 56.250 (59.524)	Domain2 47.917 (58.433)	Wmain: 0.100 	Wmain_2: 0.100	l:0.867
+train_num 17 total_epoch_acc_s 1551.48353918
+
+Epoch 67 lr_decay: 0.249693457617 disc_w_decay: 0.0422536662125
+Val Epoch: [67]	Time 48.1855580807 	c_rgb 1.046, d_rgb 0.825, fd_rgb 1.500	Prec@1 59.929	Prec2@1 81.332	Domain 51.486	Domain2 56.480	
+sort pseudo time: 0.000326871871948
+sort pseudo2 time: 0.000633955001831
+sort pseudo_co time: 0.000931024551392
+current_test_source_acc 89.9305531184 avg_test_source_acc 91.2637375986 prev_epoch_acc_s 90.9722191493 double_desc True
+current_test_source_acc2 98.7847210566 avg_test_source_acc2 98.7318021703 prev_epoch_acc_s2 98.4374990463 double_desc2 False
+threshold_count: 13 pseudo_ratio:0.2520
+threshold2_count: 16 pseudo2_ratio:0.2640
+Select error/total selected = 45/315
+Select2 error/total selected2 = 32/282
+data batch prep_time: 13.2108669281
+Epoch: [67][0/24], lr: 0.00100	Time 4.944 (4.944)	Data 0.000 (0.000)	Loss 0.3585 (0.3585)	Prec@1 83.333 (83.333)	Prec2@1 100.000 (100.000)	Domain 70.833 (70.833)	Domain2 52.083 (52.083)	Wmain: 0.100 	Wmain_2: 0.100	l:0.872
+clipping gradient: 21.0354948018 with coef 0.950773927041
+clipping gradient: 28.3654538375 with coef 0.705083025097
+Epoch: [67][20/24], lr: 0.00100	Time 5.059 (4.990)	Data 0.000 (0.000)	Loss 0.1338 (0.2141)	Prec@1 95.833 (93.056)	Prec2@1 100.000 (99.008)	Domain 56.250 (59.127)	Domain2 64.583 (59.524)	Wmain: 0.100 	Wmain_2: 0.100	l:0.872
+clipping gradient: 27.9730747129 with coef 0.714973244995
+train_num 18 total_epoch_acc_s 1644.01825896
+
+Epoch 68 lr_decay: 0.247363489902 disc_w_decay: 0.0412845256248
+Val Epoch: [68]	Time 49.2396140099 	c_rgb 1.018, d_rgb 0.818, fd_rgb 1.500	Prec@1 52.675	Prec2@1 80.380	Domain 61.474	Domain2 74.911	
+sort pseudo time: 0.00036096572876
+sort pseudo2 time: 0.000668048858643
+sort pseudo_co time: 0.000993013381958
+current_test_source_acc 92.5347197851 avg_test_source_acc 91.3343477201 prev_epoch_acc_s 89.9305531184 double_desc False
+current_test_source_acc2 99.1319433848 avg_test_source_acc2 98.7540322378 prev_epoch_acc_s2 98.7847210566 double_desc2 False
+threshold_count: 14 pseudo_ratio:0.2560
+threshold2_count: 17 pseudo2_ratio:0.2680
+Select error/total selected = 62/321
+Select2 error/total selected2 = 59/321
+data batch prep_time: 13.7220790386
+Epoch: [68][0/24], lr: 0.00099	Time 4.978 (4.978)	Data 0.000 (0.000)	Loss 0.2731 (0.2731)	Prec@1 91.667 (91.667)	Prec2@1 95.833 (95.833)	Domain 54.167 (54.167)	Domain2 54.167 (54.167)	Wmain: 0.100 	Wmain_2: 0.100	l:0.876
+Epoch: [68][20/24], lr: 0.00099	Time 5.045 (4.978)	Data 0.000 (0.000)	Loss 0.4375 (0.2738)	Prec@1 83.333 (90.675)	Prec2@1 100.000 (99.206)	Domain 50.000 (61.210)	Domain2 56.250 (58.036)	Wmain: 0.100 	Wmain_2: 0.100	l:0.876
+train_num 19 total_epoch_acc_s 1734.46964541
+
+Epoch 69 lr_decay: 0.245083629458 disc_w_decay: 0.0403376134865
+Val Epoch: [69]	Time 49.4254028797 	c_rgb 1.019, d_rgb 0.809, fd_rgb 1.500	Prec@1 53.983	Prec2@1 77.408	Domain 60.999	Domain2 70.749	
+sort pseudo time: 0.000349044799805
+sort pseudo2 time: 0.000650882720947
+sort pseudo_co time: 0.000957012176514
+current_test_source_acc 90.4513864517 avg_test_source_acc 91.2878760744 prev_epoch_acc_s 92.5347197851 double_desc True
+current_test_source_acc2 99.1319433848 avg_test_source_acc2 98.7739222981 prev_epoch_acc_s2 99.1319433848 double_desc2 False
+threshold_count: 14 pseudo_ratio:0.2560
+threshold2_count: 18 pseudo2_ratio:0.2720
+Select error/total selected = 53/332
+Select2 error/total selected2 = 80/348
+data batch prep_time: 14.6249511242
+Epoch: [69][0/24], lr: 0.00098	Time 4.924 (4.924)	Data 0.000 (0.000)	Loss 0.1462 (0.1462)	Prec@1 95.833 (95.833)	Prec2@1 100.000 (100.000)	Domain 60.417 (60.417)	Domain2 58.333 (58.333)	Wmain: 0.100 	Wmain_2: 0.100	l:0.881
+clipping gradient: 21.4849942982 with coef 0.930882257747
+Epoch: [69][20/24], lr: 0.00098	Time 4.974 (4.994)	Data 0.000 (0.000)	Loss 0.7246 (0.2232)	Prec@1 75.000 (93.056)	Prec2@1 100.000 (99.405)	Domain 56.250 (62.202)	Domain2 70.833 (60.813)	Wmain: 0.100 	Wmain_2: 0.100	l:0.881
+train_num 20 total_epoch_acc_s 1827.35158784
+
+Epoch 70 lr_decay: 0.242852203489 disc_w_decay: 0.0394124199603
+Val Epoch: [70]	Time 47.41563797 	c_rgb 1.015, d_rgb 0.777, fd_rgb 1.500	Prec@1 55.054	Prec2@1 80.856	Domain 66.350	Domain2 63.734	
+Test Epoch: [70]	Time 210.349940062 	Prec@1 59.691	Prec2@1 81.094	Domain 37.455	
+sort pseudo time: 0.00031304359436
+sort pseudo2 time: 0.000586032867432
+sort pseudo_co time: 0.000872135162354
+current_test_source_acc 92.8819424311 avg_test_source_acc 91.3675793922 prev_epoch_acc_s 90.4513864517 double_desc False
+current_test_source_acc2 99.4791660309 avg_test_source_acc2 98.8091844848 prev_epoch_acc_s2 99.1319433848 double_desc2 False
+threshold_count: 15 pseudo_ratio:0.2600
+threshold2_count: 19 pseudo2_ratio:0.2760
+Select error/total selected = 45/336
+Select2 error/total selected2 = 67/353
+data batch prep_time: 15.5966529846
+Epoch: [70][0/25], lr: 0.00097	Time 5.263 (5.263)	Data 0.000 (0.000)	Loss 0.1734 (0.1734)	Prec@1 95.833 (95.833)	Prec2@1 100.000 (100.000)	Domain 54.167 (54.167)	Domain2 45.833 (45.833)	Wmain: 0.100 	Wmain_2: 0.100	l:0.885
+Epoch: [70][20/25], lr: 0.00097	Time 5.000 (5.046)	Data 0.000 (0.000)	Loss 0.1496 (0.1640)	Prec@1 91.667 (94.048)	Prec2@1 100.000 (100.000)	Domain 62.500 (62.897)	Domain2 62.500 (59.821)	Wmain: 0.100 	Wmain_2: 0.100	l:0.885
+train_num 21 total_epoch_acc_s 1921.18491792
+
+Epoch 71 lr_decay: 0.240667614437 disc_w_decay: 0.0385084469027
+Val Epoch: [71]	Time 49.5031759739 	c_rgb 1.052, d_rgb 0.762, fd_rgb 1.500	Prec@1 52.200	Prec2@1 80.380	Domain 55.886	Domain2 65.398	
+sort pseudo time: 0.000341892242432
+sort pseudo2 time: 0.000613927841187
+sort pseudo_co time: 0.000906944274902
+current_test_source_acc 93.8333300781 avg_test_source_acc 91.4849960916 prev_epoch_acc_s 92.8819424311 double_desc False
+current_test_source_acc2 99.8333331299 avg_test_source_acc2 98.8579534679 prev_epoch_acc_s2 99.4791660309 double_desc2 False
+threshold_count: 16 pseudo_ratio:0.2640
+threshold2_count: 20 pseudo2_ratio:0.2800
+Select error/total selected = 58/348
+Select2 error/total selected2 = 50/334
+data batch prep_time: 15.0550401211
+Epoch: [71][0/25], lr: 0.00096	Time 5.000 (5.000)	Data 0.000 (0.000)	Loss 0.2077 (0.2077)	Prec@1 95.833 (95.833)	Prec2@1 100.000 (100.000)	Domain 56.250 (56.250)	Domain2 50.000 (50.000)	Wmain: 0.100 	Wmain_2: 0.100	l:0.890
+clipping gradient: 22.2290435309 with coef 0.899723821772
+Epoch: [71][20/25], lr: 0.00096	Time 4.976 (4.997)	Data 0.000 (0.000)	Loss 0.3962 (0.1962)	Prec@1 83.333 (93.452)	Prec2@1 100.000 (99.405)	Domain 60.417 (59.127)	Domain2 54.167 (58.631)	Wmain: 0.100 	Wmain_2: 0.100	l:0.890
+clipping gradient: 23.1210104764 with coef 0.865014097045
+train_num 22 total_epoch_acc_s 2014.01824892
+
+Epoch 72 lr_decay: 0.238528335748 disc_w_decay: 0.0376252075957
+Val Epoch: [72]	Time 48.8597171307 	c_rgb 1.021, d_rgb 0.732, fd_rgb 1.500	Prec@1 49.941	Prec2@1 80.856	Domain 70.868	Domain2 71.225	
+sort pseudo time: 0.000319004058838
+sort pseudo2 time: 0.000598907470703
+sort pseudo_co time: 0.000890016555786
+current_test_source_acc 92.8333309937 avg_test_source_acc 91.5462840417 prev_epoch_acc_s 93.8333300781 double_desc False
+current_test_source_acc2 99.3333325195 avg_test_source_acc2 98.8795616066 prev_epoch_acc_s2 99.8333331299 double_desc2 False
+threshold_count: 17 pseudo_ratio:0.2680
+threshold2_count: 21 pseudo2_ratio:0.2840
+Select error/total selected = 52/336
+Select2 error/total selected2 = 63/349
+data batch prep_time: 14.4995360374
+Epoch: [72][0/25], lr: 0.00095	Time 4.991 (4.991)	Data 0.000 (0.000)	Loss 0.1287 (0.1287)	Prec@1 91.667 (91.667)	Prec2@1 100.000 (100.000)	Domain 64.583 (64.583)	Domain2 68.750 (68.750)	Wmain: 0.100 	Wmain_2: 0.100	l:0.894

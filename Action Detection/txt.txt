@@ -1,0 +1,12 @@
+
+Epoch 1:
+----------------------------------------------------
+---------   Training Source + Target  --------------
+----------------------------------------------------
+hmdb_len 1930
+ucf_len 10038
+rpn_losses_flow {'loss_rpn_cls_flow': [tensor([0.5713], device='cuda:0', grad_fn=<DivBackward0>), tensor([0.1032], device='cuda:0', grad_fn=<DivBackward0>), tensor([0.0214], device='cuda:0', grad_fn=<DivBackward0>), tensor([0.0028], device='cuda:0', grad_fn=<DivBackward0>), tensor([0.], device='cuda:0', grad_fn=<DivBackward0>)], 'loss_rpn_reg_flow': [tensor([0.], device='cuda:0', grad_fn=<DivBackward0>), tensor([0.], device='cuda:0', grad_fn=<DivBackward0>), tensor([0.0009], device='cuda:0', grad_fn=<DivBackward0>), tensor([0.], device='cuda:0', grad_fn=<DivBackward0>), tensor([0.], device='cuda:0', grad_fn=<DivBackward0>)]}
+----------------------------------------------------
+---------   Test Target and get Pseudo  ------------
+----------------------------------------------------
+[                              ] 0/5667, elapsed: 0s, ETA:[                              ] 1/5667, 2.2 task/s, elapsed: 0s, ETA:  2589s[                              ] 2/5667, 2.2 task/s, elapsed: 1s, ETA:  2579s[                              ] 3/5667, 2.2 task/s, elapsed: 1s, ETA:  2573s[                              ] 4/5667, 2.2 task/s, elapsed: 2s, ETA:  2546s[                              ] 5/5667, 2.2 task/s, elapsed: 2s, ETA:  2519s[                              ] 6/5667, 2.3 task/s, elapsed: 3s, ETA:  2492s[                              ] 7/5667, 2.3 task/s, elapsed: 3s, ETA:  2472s[                              ] 8/5667, 2.3 task/s, elapsed: 3s, ETA:  2475s[                              ] 9/5667, 2.3 task/s, elapsed: 4s, ETA:  2504s[                              ] 10/5667, 2.3 task/s, elapsed: 4s, ETA:  2499s[                              ] 11/5667, 2.3 task/s, elapsed: 5s, ETA:  2490s

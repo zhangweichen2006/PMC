@@ -1,0 +1,2 @@
+DD=False
+echo "$DD"
