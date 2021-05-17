@@ -6,12 +6,13 @@ This work propose a multi-modality domain adaptation framework called Progressiv
 to transfer the knowledge learned from the source domain to the target domain by exploiting multiple modality clues (e.g., RGB and depth).
 
 Please Cite:
+
 @ARTICLE{9334409,
-  author={Zhang, Weichen and Xu, Dong and Zhang, Jing and Ouyang, Wanli},
-  journal={IEEE Transactions on Image Processing}, 
-  title={Progressive Modality Cooperation for Multi-Modality Domain Adaptation}, 
-  year={2021},
-  volume={30},
-  number={},
-  pages={3293-3306},
-  doi={10.1109/TIP.2021.3052083}}
+&nbsp;&nbsp;author={Zhang, Weichen and Xu, Dong and Zhang, Jing and Ouyang, Wanli},
+&nbsp;&nbsp;journal={IEEE Transactions on Image Processing}, 
+&nbsp;&nbsp;title={Progressive Modality Cooperation for Multi-Modality Domain Adaptation}, 
+&nbsp;&nbsp;year={2021},
+&nbsp;&nbsp;volume={30},
+&nbsp;&nbsp;number={},
+&nbsp;&nbsp;pages={3293-3306},
+&nbsp;&nbsp;doi={10.1109/TIP.2021.3052083}}
